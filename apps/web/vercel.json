@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd ../.. && pnpm turbo run build --filter=@repute/web...",
+  "installCommand": "cd ../.. && pnpm install",
+  "framework": "nextjs"
+}
