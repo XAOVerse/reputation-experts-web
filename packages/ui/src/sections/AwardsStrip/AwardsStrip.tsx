@@ -36,9 +36,9 @@ const CBSLogo = () => (
 );
 
 const BBCLogo = () => (
-  <div className="flex gap-[2px]">
+  <div className="flex gap-[2px] flex-shrink-0">
     {["B", "B", "C"].map((l, i) => (
-      <span key={i} className="w-[24px] h-[24px] bg-[#1a1a1a] text-white text-[14px] font-bold flex items-center justify-center rounded-[1px]">{l}</span>
+      <span key={i} className="w-[20px] h-[20px] bg-[#1a1a1a] text-white text-[11px] font-bold flex items-center justify-center rounded-[1px]">{l}</span>
     ))}
   </div>
 );
@@ -59,17 +59,14 @@ const BusinessInsiderLogo = () => (
 );
 
 const NBCLogo = () => (
-  <div className="flex items-center gap-1.5">
-    <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
-      <ellipse cx="16" cy="10" rx="4.5" ry="9" fill="#e4002b" transform="rotate(-30 16 10)"/>
-      <ellipse cx="10" cy="20" rx="4.5" ry="9" fill="#ff6600" transform="rotate(-75 10 20)"/>
-      <ellipse cx="16" cy="34" rx="4.5" ry="9" fill="#009639" transform="rotate(30 16 34)"/>
-      <ellipse cx="32" cy="34" rx="4.5" ry="9" fill="#0089d0" transform="rotate(-30 32 34)"/>
-      <ellipse cx="38" cy="20" rx="4.5" ry="9" fill="#6460aa" transform="rotate(75 38 20)"/>
-      <ellipse cx="32" cy="10" rx="4.5" ry="9" fill="#ffb612" transform="rotate(30 32 10)"/>
-    </svg>
-    <span className="text-[15px] font-bold text-[#1a1a1a]" style={{ fontFamily: "Arial, sans-serif" }}>NBC</span>
-  </div>
+  <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
+    <ellipse cx="16" cy="10" rx="4.5" ry="9" fill="#e4002b" transform="rotate(-30 16 10)"/>
+    <ellipse cx="10" cy="20" rx="4.5" ry="9" fill="#ff6600" transform="rotate(-75 10 20)"/>
+    <ellipse cx="16" cy="34" rx="4.5" ry="9" fill="#009639" transform="rotate(30 16 34)"/>
+    <ellipse cx="32" cy="34" rx="4.5" ry="9" fill="#0089d0" transform="rotate(-30 32 34)"/>
+    <ellipse cx="38" cy="20" rx="4.5" ry="9" fill="#6460aa" transform="rotate(75 38 20)"/>
+    <ellipse cx="32" cy="10" rx="4.5" ry="9" fill="#ffb612" transform="rotate(30 32 10)"/>
+  </svg>
 );
 
 const DigitalJournalLogo = () => (
@@ -84,12 +81,12 @@ const DigitalJournalLogo = () => (
 const ReddotOverlay = () => (
   <div className="flex items-center gap-3">
     <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
-      <circle cx="40" cy="40" r="36" stroke="white" strokeWidth="2"/>
+      <circle cx="40" cy="40" r="36" stroke="currentColor" strokeWidth="2"/>
       {[0, 1, 2, 3, 4].map((i) => (
-        <ellipse key={i} cx="40" cy={18 + i * 10} rx={28 - i * 3.5} ry="3" stroke="white" strokeWidth="1.5" fill="none"/>
+        <ellipse key={i} cx="40" cy={18 + i * 10} rx={28 - i * 3.5} ry="3" stroke="currentColor" strokeWidth="1.5" fill="none"/>
       ))}
     </svg>
-    <span className="text-white text-[22px] font-medium tracking-[-0.01em]">reddot</span>
+    <span className="text-[22px] font-medium tracking-[-0.01em]">reddot</span>
   </div>
 );
 
@@ -100,14 +97,14 @@ const JEOverlay = () => (
 );
 
 const ForbesOverlay = () => (
-  <span className="text-white text-[40px] font-bold italic tracking-[-0.02em] drop-shadow-lg" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>Forbes</span>
+  <span className="text-[40px] font-bold italic tracking-[-0.02em]" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>Forbes</span>
 );
 
 const FintechTimesOverlay = () => (
   <div className="flex items-center gap-1.5">
-    <span className="text-white text-[15px] tracking-[0.02em] drop-shadow-lg" style={{ fontFamily: "Georgia, serif" }}>THE</span>
-    <span className="bg-white text-[#1a1a1a] text-[15px] px-2 py-0.5 font-bold" style={{ fontFamily: "Georgia, serif" }}>FINTECH</span>
-    <span className="text-white text-[15px] tracking-[0.02em] drop-shadow-lg" style={{ fontFamily: "Georgia, serif" }}>TIMES</span>
+    <span className="text-[15px] tracking-[0.02em]" style={{ fontFamily: "Georgia, serif" }}>THE</span>
+    <span className="text-[15px] px-2 py-0.5 font-bold border border-current" style={{ fontFamily: "Georgia, serif" }}>FINTECH</span>
+    <span className="text-[15px] tracking-[0.02em]" style={{ fontFamily: "Georgia, serif" }}>TIMES</span>
   </div>
 );
 
@@ -139,6 +136,35 @@ const DEFAULT_RIGHT_CARDS: MediaCard[] = [
   { image: "/images/image-3.webp", overlay: <ForbesOverlay />, url: "#" },
   { image: "/images/image-4.webp", overlay: <FintechTimesOverlay />, url: "#" },
 ];
+
+/* ─── Media Card with hover-only background image ────────────────────── */
+
+function MediaCardItem({ card, cardKey }: { card: MediaCard; cardKey: string }) {
+  const [hovered, setHovered] = React.useState(false);
+  return (
+    <a
+      key={cardKey}
+      href={card.url ?? "#"}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={styles.mediaCard}
+      style={hovered && card.image
+        ? { backgroundImage: `url(${card.image})`, backgroundSize: "cover", backgroundPosition: "center" }
+        : undefined
+      }
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className={`${styles.mediaCardOverlay} ${hovered ? styles.overlayVisible : ""}`} />
+      <div className={`${styles.mediaCardContent} ${hovered ? styles.contentOnHover : styles.contentDefault}`}>
+        {card.overlay}
+      </div>
+      <div className={`${styles.mediaCardArrowBadge} ${hovered ? styles.arrowOnHover : styles.arrowDefault}`}>
+        <ArrowUpRight />
+      </div>
+    </a>
+  );
+}
 
 /* ─── Component ───────────────────────────────────────────────────────── */
 
@@ -179,40 +205,14 @@ export function AwardsStrip({
           {/* ─── Middle Column: 2 stacked cards ─── */}
           <div className={styles.cardsCol}>
             {middleCards.map((card, i) => (
-              <a
-                key={`mid-${i}`}
-                href={card.url ?? "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.mediaCard}
-                style={card.image ? { backgroundImage: `url(${card.image})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
-              >
-                <div className={styles.mediaCardOverlay} />
-                <div className={styles.mediaCardContent}>{card.overlay}</div>
-                <div className={styles.mediaCardArrowBadge}>
-                  <ArrowUpRight />
-                </div>
-              </a>
+              <MediaCardItem key={`mid-${i}`} card={card} cardKey={`mid-${i}`} />
             ))}
           </div>
 
           {/* ─── Right Column: 2 stacked cards ─── */}
           <div className={styles.cardsCol}>
             {rightCards.map((card, i) => (
-              <a
-                key={`right-${i}`}
-                href={card.url ?? "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.mediaCard}
-                style={card.image ? { backgroundImage: `url(${card.image})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
-              >
-                <div className={styles.mediaCardOverlay} />
-                <div className={styles.mediaCardContent}>{card.overlay}</div>
-                <div className={styles.mediaCardArrowBadge}>
-                  <ArrowUpRight />
-                </div>
-              </a>
+              <MediaCardItem key={`right-${i}`} card={card} cardKey={`right-${i}`} />
             ))}
           </div>
         </div>
