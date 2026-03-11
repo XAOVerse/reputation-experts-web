@@ -44,7 +44,7 @@ export function FAQSection({
   const [openItem, setOpenItem] = useState<number | null>(null);
 
   return (
-    <section className="bg-[#f0efed] py-14 lg:py-20">
+    <section className="bg-[#f5f5f3] pt-6 pb-14 lg:pt-8 lg:pb-20">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
         <h2 className="text-[#1a1a1a] font-bold text-[clamp(2.5rem,5vw,3.5rem)] tracking-[-0.03em] mb-10 lg:mb-12">
           {heading}
