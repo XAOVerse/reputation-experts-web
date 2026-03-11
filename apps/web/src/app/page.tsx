@@ -68,7 +68,7 @@ export default function HomePage() {
       <FAQSection heading="FAQ" />
 
       {/* ── 10. CTA (Assessment Form) ────────────────────────────── */}
-      <CTASection headline="Free Reputation Case Assessment" />
+      <CTASection headline={"Free Reputation\nCase Assessment"} />
     </main>
   );
 }
