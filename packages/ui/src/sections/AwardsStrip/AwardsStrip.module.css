@@ -1,17 +1,185 @@
-/* Awards marquee */
-.badgeTrack {
+/* ─── Awards & Mentions – 3-column layout ─────────────────────────────── */
+
+/* 3-column grid: left mentions | middle cards | right cards */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+/* ─── Left column: mention rows ─────────────────────────────────────── */
+
+.mentionsCol {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mentionRow {
+  display: flex;
   align-items: center;
-  width: max-content;
-  animation: marquee 25s linear infinite;
+  gap: 14px;
+  padding: 16px 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  margin-bottom: -1px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
 }
 
-.badgeTrack:hover {
-  animation-play-state: paused;
+.mentionRow:hover {
+  background-color: #fafafa;
 }
 
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+.mentionLogo {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mentionName {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+
+.mentionLink {
+  font-size: 14px;
+  color: #999;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.mentionArrow {
+  flex-shrink: 0;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.mentionRow:hover .mentionArrow {
+  color: #555;
+}
+
+/* ─── Middle & Right columns: stacked media cards ───────────────────── */
+
+.cardsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mediaCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  flex: 1;
+  min-height: 200px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mediaCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.mediaCardWithImage {
+  color: white;
+}
+
+.mediaCardPlain {
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
+}
+
+.mediaCardOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+.mediaCardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mediaCardArrowBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: transform 0.2s ease;
+}
+
+.mediaCard:hover .mediaCardArrowBadge {
+  transform: scale(1.1);
+}
+
+.arrowBadgeDark {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: white;
+}
+
+.arrowBadgeLight {
+  background-color: #f5f5f5;
+  color: #999;
+}
+
+.mentionRow:first-child {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.mentionRow:last-child {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-bottom: 0;
+}
+
+/* ─── Mobile: stack everything ──────────────────────────────────────── */
+
+@media (max-width: 767px) {
+  .mentionRow {
+    gap: 10px;
+    padding: 14px 12px;
+  }
+
+  .mentionLogo {
+    width: 48px;
+  }
+
+  .mentionName {
+    font-size: 14px;
+  }
+
+  .mentionLink {
+    display: none;
+  }
+
+  .mediaCard {
+    min-height: 180px;
+  }
 }

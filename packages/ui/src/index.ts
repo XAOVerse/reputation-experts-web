@@ -35,7 +35,7 @@ export { TestimonialsSection } from "./sections/TestimonialsSection";
 export type { TestimonialsSectionProps, TestimonialItem } from "./sections/TestimonialsSection";
 
 export { AwardsStrip } from "./sections/AwardsStrip";
-export type { AwardsStripProps, Award, RecognitionBadge } from "./sections/AwardsStrip";
+export type { AwardsStripProps, Mention, MediaCard } from "./sections/AwardsStrip";
 
 export { ProcessSection } from "./sections/ProcessSection";
 export type { ProcessSectionProps, ProcessStep } from "./sections/ProcessSection";

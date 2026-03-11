@@ -56,10 +56,7 @@ export default function HomePage() {
       />
 
       {/* ── 6. Awards and Mentions ───────────────────────────────── */}
-      <AwardsStrip
-        heading="Awards and Mentions"
-        recognitionsLabel="Recognitions"
-      />
+      <AwardsStrip heading="Awards and Mentions" />
 
       {/* ── 7. Our Process ───────────────────────────────────────── */}
       <ProcessSection heading="Our Process" />
