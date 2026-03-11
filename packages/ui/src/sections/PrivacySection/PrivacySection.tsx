@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 export interface PrivacyFeature {
-  iconEmoji?: string;
+  icon?: string;
   title: string;
   description?: string;
 }
@@ -15,19 +16,22 @@ export interface PrivacySectionProps {
 
 const DEFAULT_FEATURES: PrivacyFeature[] = [
   {
-    iconEmoji: "🔍",
+    icon: "/images/Icon.svg",
     title: "Initial Deep Web Scan",
-    description: "We begin by performing a comprehensive deep web scan to discover every instance of harmful content published about you or your business across all layers of the internet.",
+    description:
+      "We scan the internet for exposed data, including relatives' names, using multiple name variations to locate as many records as possible.",
   },
   {
-    iconEmoji: "🗑️",
+    icon: "/images/Icon 2.svg",
     title: "Personal Data Removal",
-    description: "Our specialists remove personally identifiable information from data broker sites, public records aggregators, and people-search platforms to reduce your digital footprint.",
+    description:
+      "We remove your personal data from online sources using automated and manual methods, overseen by a privacy expert.",
   },
   {
-    iconEmoji: "👁️",
+    icon: "/images/Icon 3.svg",
     title: "Ongoing Surveillance",
-    description: "After cleanup, our monitoring systems actively watch for new threats — alerting you immediately if harmful content resurfaces so we can act fast to suppress it.",
+    description:
+      "Continuous monitoring detects reputation risks early, allowing issues to be addressed before they escalate.",
   },
 ];
 
@@ -36,7 +40,7 @@ export function PrivacySection({
   features = DEFAULT_FEATURES,
 }: PrivacySectionProps) {
   return (
-    <section className="bg-[#f7f7f7] py-14 lg:py-20">
+    <section className="bg-[#f5f5f3] py-14 lg:py-20">
       <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
         <h2 className="text-[#1a1a1a] font-bold text-[clamp(1.35rem,2.5vw,1.75rem)] tracking-[-0.02em] mb-8">
           {heading}
@@ -45,10 +49,22 @@ export function PrivacySection({
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {features.map((feature) => (
             <div key={feature.title} className="bg-white rounded-xl p-6 border border-[#ebebeb]">
-              <div className="w-10 h-10 rounded-lg bg-[#f0f0f0] flex items-center justify-center mb-4 text-xl">
-                {feature.iconEmoji ?? "🔒"}
+              <div className="w-10 h-10 mb-4 flex items-center justify-start">
+                {feature.icon ? (
+                  <Image
+                    src={feature.icon}
+                    alt={feature.title}
+                    width={40}
+                    height={40}
+                    style={{ objectFit: "contain" }}
+                  />
+                ) : (
+                  <span className="text-xl">🔒</span>
+                )}
               </div>
-              <h3 className="text-[#1a1a1a] font-semibold text-[14px] leading-snug mb-2">{feature.title}</h3>
+              <h3 className="text-[#1a1a1a] font-semibold text-[14px] leading-snug mb-2">
+                {feature.title}
+              </h3>
               {feature.description && (
                 <p className="text-[#777] text-[13px] leading-relaxed">{feature.description}</p>
               )}
