@@ -1,15 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import type { ImageAsset } from "../../types";
+import styles from "./ProcessSection.module.css";
 
 export interface ProcessStep {
-  stepNumber: string;
+  stepLabel: string;
   title: string;
   description?: string;
-  image?: ImageAsset;
+  image?: string;
   ctaLabel?: string;
   ctaLink?: string;
 }
@@ -21,28 +20,25 @@ export interface ProcessSectionProps {
 
 const DEFAULT_STEPS: ProcessStep[] = [
   {
-    stepNumber: "01",
-    title: "Identify the Online Concern",
-    description: "We conduct a thorough analysis of your online presence to identify all harmful, defamatory, or misleading content that is affecting your reputation across the web.",
-    image: { src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80", alt: "Research and analysis" },
-    ctaLabel: "More",
-    ctaLink: "/process/identify",
+    stepLabel: "Step 1",
+    title: "Identify the\nOnline Concern",
+    description:
+      "We review the reported content and assess how it may affect your business reputation and customer perception. Our team evaluates the context of the review or material and determines whether it may violate platform policies or community guidelines.",
+    image: "/images/history-001.webp",
   },
   {
-    stepNumber: "02",
-    title: "Create a Custom Solution",
-    description: "Our specialists develop a tailored removal and suppression strategy specific to your case, platform, and the type of content — maximising success rates.",
-    image: { src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80", alt: "Strategy planning" },
-    ctaLabel: "More",
-    ctaLink: "/process/strategy",
+    stepLabel: "Step 2",
+    title: "Create a\nCustom Solution",
+    description:
+      "Based on the initial assessment, we develop a structured approach tailored to the specific situation. This includes identifying the most appropriate reporting channels, documentation requirements, and dispute options available through the relevant platforms.",
+    image: "/images/history-002.webp",
   },
   {
-    stepNumber: "03",
-    title: "Implement the Reputation Program",
-    description: "We execute the full strategy — submitting disputes, monitoring responses, publishing positive content, and reporting progress to you at every step.",
-    image: { src: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=500&q=80", alt: "Implementation" },
-    ctaLabel: "More",
-    ctaLink: "/process/implement",
+    stepLabel: "Step 3",
+    title: "Implement the\nReputation Program",
+    description:
+      "Our team prepares the necessary reports and supporting documentation required for the submission process. We then assist with filing the case through the appropriate platform channels and monitor the progress while keeping you informed.",
+    image: "/images/history-003.webp",
   },
 ];
 
@@ -50,58 +46,81 @@ export function ProcessSection({
   heading = "Our Process",
   steps = DEFAULT_STEPS,
 }: ProcessSectionProps) {
-  const [hovered, setHovered] = useState<number | null>(null);
+  const sectionRef = useRef<HTMLElement>(null);
+  const [activeStep, setActiveStep] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const el = sectionRef.current;
+      if (!el) return;
+      const rect = el.getBoundingClientRect();
+      const scrolled = -rect.top;
+      const scrollable = el.offsetHeight - window.innerHeight;
+      const progress = Math.max(0, Math.min(0.9999, scrolled / scrollable));
+      const idx = Math.floor(progress * steps.length);
+      setActiveStep(Math.min(idx, steps.length - 1));
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [steps.length]);
 
   return (
-    <section className="bg-white py-14 lg:py-20">
-      <div className="max-w-[1200px] mx-auto px-5 lg:px-8">
-        <h2 className="text-[#1a1a1a] font-bold text-[clamp(1.35rem,2.5vw,1.75rem)] tracking-[-0.02em] mb-8">
-          {heading}
-        </h2>
+    <section
+      ref={sectionRef}
+      className={styles.section}
+      style={{ height: `${steps.length * 100}vh` }}
+    >
+      <div className={styles.sticky}>
+        <div className={styles.inner}>
+          {/* Heading */}
+          <h2 className={styles.heading}>{heading}</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-          {steps.map((step, i) => (
-            <div
-              key={step.stepNumber}
-              className="bg-[#f7f7f7] rounded-xl overflow-hidden border border-[#ebebeb] hover:border-[#d0d0d0] hover:shadow-md transition-all duration-300"
-              onMouseEnter={() => setHovered(i)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              {/* Image */}
-              {step.image && (
-                <div className="relative h-[160px] overflow-hidden">
-                  <Image
-                    src={step.image.src}
-                    alt={step.image.alt ?? step.title}
-                    fill
-                    className={`object-cover grayscale transition-all duration-500 ${hovered === i ? "scale-105 grayscale-0" : ""}`}
-                    sizes="(max-width: 640px) 100vw, 33vw"
-                  />
-                  {/* Step number badge */}
-                  <div className="absolute top-3 left-3 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm">
-                    <span className="text-[#1a1a1a] text-[11px] font-bold">{step.stepNumber}</span>
+          {/* Cards grid */}
+          <div className={styles.grid}>
+            {steps.map((step, i) => {
+              const isActive = activeStep === i;
+              return (
+                <div
+                  key={i}
+                  className={`${styles.card} ${isActive ? styles.cardActive : styles.cardDim}`}
+                >
+                  {/* Image */}
+                  <div className={styles.imageWrap}>
+                    {step.image && (
+                      <Image
+                        src={step.image}
+                        alt={step.title}
+                        fill
+                        className={`object-cover transition-all duration-700 ${isActive ? "" : "grayscale"}`}
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                      />
+                    )}
+                  </div>
+
+                  {/* Content */}
+                  <div className={styles.content}>
+                    <h3 className={styles.title}>
+                      {step.title.split("\n").map((line, j) => (
+                        <span key={j} className="block">{line}</span>
+                      ))}
+                    </h3>
+                    {step.description && (
+                      <p className={styles.description}>{step.description}</p>
+                    )}
+                    <div
+                      className={`${styles.stepPill} ${isActive ? styles.stepPillActive : styles.stepPillDim}`}
+                    >
+                      {step.stepLabel}
+                    </div>
                   </div>
                 </div>
-              )}
-
-              <div className="p-5">
-                <h3 className="text-[#1a1a1a] font-semibold text-[14px] leading-snug mb-2">{step.title}</h3>
-                {step.description && (
-                  <p className="text-[#777] text-[12px] leading-relaxed mb-4">{step.description}</p>
-                )}
-                {step.ctaLink && (
-                  <Link
-                    href={step.ctaLink}
-                    className="inline-flex items-center gap-1 rounded-full bg-[#1a1a1a] text-white text-[11px] font-semibold px-4 py-1.5 hover:bg-[#333] transition-colors"
-                  >
-                    {step.ctaLabel ?? "More"}
-                  </Link>
-                )}
-              </div>
-            </div>
-          ))}
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
