@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Reputation Experts — Protect Your Business from Harmful Online Reviews",
-  description:
+  description
     "Reputation Experts helps businesses remove harmful, fake, and defamatory online reviews. Professional reputation management across Google, Yelp, Trustpilot, Glassdoor and 50+ platforms.",
 };
 
@@ -57,7 +57,7 @@ export default function HomePage() {
       {/* Awards section hidden until PR articles are published
               <AwardsStrip heading="As Featured In" /> */}
       {/* ── 7. Our Process ───────────────────────────────────────── */}
-      <ProcessSection heading="Our Process" />
+            <ProcessSection />
 
       {/* ── 8. Privacy ───────────────────────────────────────────── */}
       <PrivacySection heading="How We Safeguard Your Privacy" />
