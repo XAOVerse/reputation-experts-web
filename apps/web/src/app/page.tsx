@@ -54,9 +54,8 @@ export default function HomePage() {
         ctaHref="/contact"
       />
 
-      {/* ── 6. Awards and Mentions ───────────────────────────────── */}
-      <AwardsStrip heading="As Featured In" />
-
+      {/* Awards section hidden until PR articles are published
+              <AwardsStrip heading="As Featured In" /> */}
       {/* ── 7. Our Process ───────────────────────────────────────── */}
       <ProcessSection heading="Our Process" />
 
