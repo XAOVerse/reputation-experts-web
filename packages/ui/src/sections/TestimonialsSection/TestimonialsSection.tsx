@@ -22,22 +22,19 @@ export interface TestimonialsSectionProps {
 
 const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
-    quote: "Reputation Experts helped us restore our online reputation quickly and professionally. Within weeks, the harmful reviews were gone and our ratings improved significantly.",
-    avatar: { src: "https://randomuser.me/api/portraits/men/32.jpg", alt: "James Mitchell" },
-    name: "James Mitchell",
-    title: "CEO, Mitchell & Co.",
+    quote: "A competitor posted fake one-star reviews across our Google and Booking.com listings. Reputation Experts identified the policy violations, filed the disputes, and had them removed within three weeks. Our average rating recovered from 3.2 to 4.6.",
+    name: "Hotel General Manager",
+    title: "Boutique Hotel, Central London",
   },
   {
-    quote: "I was losing customers to fake negative reviews. The team identified the violations, built a strong case, and had the content removed faster than I expected.",
-    avatar: { src: "https://randomuser.me/api/portraits/women/44.jpg", alt: "Sarah Thompson" },
-    name: "Sarah Thompson",
-    title: "Owner, Thompson Dental Group",
+    quote: "We were losing bookings because of a single defamatory TripAdvisor review that made false claims about hygiene. The team built a strong case, submitted the appeal, and it was taken down. Worth every penny.",
+    name: "Operations Director",
+    title: "Restaurant Group, Manchester",
   },
   {
-    quote: "Outstanding service from start to finish. They kept us informed at every step and delivered results that directly improved our business performance.",
-    avatar: { src: "https://randomuser.me/api/portraits/men/67.jpg", alt: "David Okonkwo" },
-    name: "David Okonkwo",
-    title: "Founder, Nexus Financial",
+    quote: "Reputation Experts set up ongoing monitoring for our hotel brand across all major review platforms. We now get alerts within hours of a new negative review and can respond before it impacts bookings.",
+    name: "Marketing Manager",
+    title: "Hotel Chain, South East England",
   },
 ];
 

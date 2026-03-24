@@ -14,7 +14,7 @@ const STORAGE_KEY = "cookie_consent";
 
 export function CookieBanner({
   message = "We use cookies to enhance your browsing experience.",
-  privacyPolicyLink = "/privacy-notice",
+  privacyPolicyLink = "/privacy",
   acceptLabel = "Accept",
   declineLabel = "Decline",
 }: CookieBannerProps) {

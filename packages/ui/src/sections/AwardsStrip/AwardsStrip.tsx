@@ -119,23 +119,15 @@ const ArrowUpRight = ({ className = "" }: { className?: string }) => (
 /* ─── Defaults ────────────────────────────────────────────────────────── */
 
 const DEFAULT_MENTIONS: Mention[] = [
-  { logo: <CBSLogo />, name: "CBS", linkText: "Read Full Article", url: "#" },
-  { logo: <BBCLogo />, name: "BBC", linkText: "Read Full Article", url: "#" },
-  { logo: <FOXNewsLogo />, name: "FOX News", linkText: "Read Full Article", url: "#" },
-  { logo: <BusinessInsiderLogo />, name: "Business Insider", linkText: "Read Full Article", url: "#" },
-  { logo: <NBCLogo />, name: "NBC", linkText: "Read Full Article", url: "#" },
-  { logo: <DigitalJournalLogo />, name: "Digital Journal", linkText: "Read Full Article", url: "#" },
+  { logo: <CBSLogo />, name: "CBS News", linkText: "Read Article", url: "#" },
+  { logo: <FOXNewsLogo />, name: "FOX News", linkText: "Read Article", url: "#" },
+  { logo: <NBCLogo />, name: "NBC News", linkText: "Read Article", url: "#" },
+  { logo: <DigitalJournalLogo />, name: "Digital Journal", linkText: "Read Article", url: "#" },
 ];
 
-const DEFAULT_MIDDLE_CARDS: MediaCard[] = [
-  { image: "/images/image-1.webp", overlay: <ReddotOverlay />, url: "#" },
-  { image: "/images/image-2.webp", overlay: <JEOverlay />, url: "#" },
-];
+const DEFAULT_MIDDLE_CARDS: MediaCard[] = [];
 
-const DEFAULT_RIGHT_CARDS: MediaCard[] = [
-  { image: "/images/image-3.webp", overlay: <ForbesOverlay />, url: "#" },
-  { image: "/images/image-4.webp", overlay: <FintechTimesOverlay />, url: "#" },
-];
+const DEFAULT_RIGHT_CARDS: MediaCard[] = [];
 
 /* ─── Media Card with hover-only background image ────────────────────── */
 
@@ -169,7 +161,7 @@ function MediaCardItem({ card, cardKey }: { card: MediaCard; cardKey: string }) 
 /* ─── Component ───────────────────────────────────────────────────────── */
 
 export function AwardsStrip({
-  heading = "Awards and Mentions",
+  heading = "As Featured In",
   mentions = DEFAULT_MENTIONS,
   middleCards = DEFAULT_MIDDLE_CARDS,
   rightCards = DEFAULT_RIGHT_CARDS,

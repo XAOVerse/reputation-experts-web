@@ -6,10 +6,9 @@ import Image from "next/image";
 import type { HeaderProps } from "./Header.types";
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
-  { label: "About us", href: "/about" },
-  { label: "Works", href: "/works" },
-  { label: "Careers", href: "/careers" },
-  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Header({

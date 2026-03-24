@@ -30,9 +30,8 @@ export default function HomePage() {
         subQuote="Negative reviews can impact customer trust within hours. Understand your options before the damage spreads."
         ctaLabel="Free Reputation Case Assessment"
         ctaLink="/contact"
-        mediaCaption="founder of Reputation Experts – a reputation management firm"
+        mediaCaption="Reputation Experts — Professional Online Reputation Management"
         mediaSrc="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
-        videoSrc="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
       />
 
       {/* ── 2. Who We Serve ──────────────────────────────────────── */}
@@ -56,7 +55,7 @@ export default function HomePage() {
       />
 
       {/* ── 6. Awards and Mentions ───────────────────────────────── */}
-      <AwardsStrip heading="Awards and Mentions" />
+      <AwardsStrip heading="As Featured In" />
 
       {/* ── 7. Our Process ───────────────────────────────────────── */}
       <ProcessSection heading="Our Process" />

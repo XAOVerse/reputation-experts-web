@@ -49,10 +49,10 @@ function StatItem({ stat, active }: { stat: StatItem; active: boolean }) {
 }
 
 const DEFAULT_STATS: StatItem[] = [
-  { number: 50, suffix: "+", label: "Clients" },
-  { number: 15, suffix: "+", label: "Years of Experience" },
-  { number: 30, suffix: "M+", label: "Users Served" },
-  { number: 6, label: "Design Awards" },
+  { number: 120, suffix: "+", label: "Reviews Removed" },
+  { number: 50, suffix: "+", label: "Review Platforms Covered" },
+  { number: 98, suffix: "%", label: "Client Satisfaction" },
+  { number: 48, suffix: "hr", label: "Average Response Time" },
 ];
 
 export function StatsSection({ stats = DEFAULT_STATS }: StatsSectionProps) {

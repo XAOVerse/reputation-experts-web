@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   },
   description:
     "Professional online reputation management. We remove harmful, fake, and defamatory reviews from Google, Yelp, Trustpilot, Glassdoor, and 50+ platforms.",
-  metadataBase: new URL("https://getreputationpros.com"),
+  metadataBase: new URL("https://reputation-experts.co.uk"),
   openGraph: {
     type: "website",
     locale: "en_US",

@@ -113,7 +113,7 @@ export function CTASection({
 
                   <p className="text-white/40 text-[12px] flex-1 leading-snug min-w-0">
                     I confirm that I have read, consent and agree to our{" "}
-                    <a href="#" className="underline text-white/60 hover:text-white/80 transition-colors">
+                    <a href="/privacy" className="underline text-white/60 hover:text-white/80 transition-colors">
                       Privacy Policy
                     </a>
                   </p>

@@ -42,23 +42,19 @@ const SOCIAL_ICONS: Record<string, React.ReactNode> = {
 };
 
 const DEFAULT_OFFICES = [
-  { city: "USA", address: "8th The Green Suite 7737, Dover, DE 19901" },
-  { city: "UK", address: "1 Canada Square, Canary Wharf, London E14 5AB" },
+  { city: "London", address: "167-169 Great Portland Street, 5th Floor, London W1W 5PF" },
 ];
 
 const DEFAULT_NAV: NavItem[] = [
-  { label: "News", href: "/news" },
-  { label: "Case Studies", href: "/case-studies" },
   { label: "About", href: "/about" },
-  { label: "Blog", href: "/blog" },
+  { label: "Services", href: "/services" },
   { label: "Contact", href: "/contact" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms of Service", href: "/terms" },
 ];
 
 const DEFAULT_SOCIALS: SocialLink[] = [
-  { platform: "facebook", url: "https://facebook.com", label: "Facebook" },
   { platform: "linkedin", url: "https://linkedin.com", label: "LinkedIn" },
-  { platform: "twitter", url: "https://twitter.com", label: "Twitter" },
-  { platform: "instagram", url: "https://instagram.com", label: "Instagram" },
 ];
 
 export function Footer({
@@ -122,7 +118,10 @@ export function Footer({
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="text-[#aaa] text-[12px]">{copyrightText}</p>
+          <div>
+            <p className="text-[#aaa] text-[12px]">{copyrightText}</p>
+            <p className="text-[#ccc] text-[11px] mt-1">Reputation Experts Ltd — Company No. 16939732 — Registered in England &amp; Wales</p>
+          </div>
 
           <div className="flex flex-wrap gap-4 lg:gap-8">
             {offices.map((office) => (
