@@ -1,2 +1,1 @@
-export { ProcessSection } from "./ProcessSection";
-export type { ProcessSectionProps, ProcessStep } from "./ProcessSection";
+export { default as ProcessSection } from "./ProcessSection";
