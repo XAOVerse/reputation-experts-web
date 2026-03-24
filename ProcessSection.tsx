@@ -24,21 +24,21 @@ const DEFAULT_STEPS: ProcessStep[] = [
     title: "Identify the\nOnline Concern",
     description:
       "We review the reported content and assess how it may affect your business reputation and customer perception. Our team evaluates the context of the review or material and determines whether it may violate platform policies or community guidelines.",
-    image: "/images/history-001.webp",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
   },
   {
     stepLabel: "Step 2",
     title: "Create a\nCustom Solution",
     description:
       "Based on the initial assessment, we develop a structured approach tailored to the specific situation. This includes identifying the most appropriate reporting channels, documentation requirements, and dispute options available through the relevant platforms.",
-    image: "/images/history-002.webp",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
   },
   {
     stepLabel: "Step 3",
     title: "Implement the\nReputation Program",
     description:
       "Our team prepares the necessary reports and supporting documentation required for the submission process. We then assist with filing the case through the appropriate platform channels and monitor the progress while keeping you informed.",
-    image: "/images/history-003.webp",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
   },
 ];
 
@@ -123,4 +123,3 @@ export function ProcessSection({
     </section>
   );
 }
-
