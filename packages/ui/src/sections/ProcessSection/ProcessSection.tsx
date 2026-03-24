@@ -13,7 +13,7 @@ interface Step {
 const DEFAULT_STEPS: Step[] = [
   {
     title: 'Identify the\nOnline Concern',
-    description:
+    description
       'We review the reported content and assess how it may affect your business reputation and customer perception. Our team evaluates the context of the review or material and determines whether it may violate platform policies or community guidelines.',
     image: '/images/history-001.webp',
   },
@@ -57,7 +57,7 @@ export default function ProcessSection({ steps = DEFAULT_STEPS }: { steps?: Step
     <section
       ref={sectionRef}
       className={styles.section}
-      style={{ height: ``${steps.length * 100}vh` }}
+      style={{ height: `${steps.length * 100}vh` }}
     >
       <div className={styles.sticky}>
         <div className={styles.inner}>
