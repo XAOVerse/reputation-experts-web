@@ -17,21 +17,21 @@ export interface PrivacySectionProps {
 const DEFAULT_FEATURES: PrivacyFeature[] = [
   {
     icon: "/images/Icon.svg",
-    title: "Initial Deep Web Scan",
+    title: "Comprehensive Digital Scan",
     description:
-      "We scan the internet for exposed data, including relatives' names, using multiple name variations to locate as many records as possible.",
+      "We audit your full digital footprint across search engines, data brokers, and public databases to identify exposed information.",
   },
   {
     icon: "/images/Icon 2.svg",
-    title: "Personal Data Removal",
+    title: "Personal Data Protection",
     description:
-      "We remove your personal data from online sources using automated and manual methods, overseen by a privacy expert.",
+      "We work to remove or suppress exposed personal data using legitimate methods, overseen by our privacy specialists.",
   },
   {
     icon: "/images/Icon 3.svg",
-    title: "Ongoing Surveillance",
+    title: "Ongoing Monitoring",
     description:
-      "Continuous monitoring detects reputation risks early, allowing issues to be addressed before they escalate.",
+      "Continuous surveillance detects new exposures and reputation risks early, so issues can be addressed before they escalate.",
   },
 ];
 

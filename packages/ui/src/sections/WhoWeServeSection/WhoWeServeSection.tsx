@@ -20,19 +20,19 @@ export interface WhoWeServeSectionProps {
 
 const DEFAULT_CARDS: ServeCard[] = [
   {
-    title: "Solutions for Individuals and Executives",
-    image: { src: "/images/card-executives.png", alt: "Two business executives in conversation" },
-    href: "/solutions/individuals",
+    title: "For Individuals & Executives",
+    image: { src: "/images/card-executives.png", alt: "Professional executives" },
+    href: "/services",
   },
   {
-    title: "Solutions for Small and Medium Businesses",
-    image: { src: "/images/card-smb.png", alt: "Commercial service vehicle" },
-    href: "/solutions/small-medium-business",
+    title: "For Small & Medium Businesses",
+    image: { src: "/images/card-smb.png", alt: "Growing business" },
+    href: "/services",
   },
   {
-    title: "Solutions for Large Companies",
-    image: { src: "/images/card-enterprise.png", alt: "Large open plan office" },
-    href: "/solutions/enterprise",
+    title: "For Enterprise & Corporations",
+    image: { src: "/images/card-enterprise.png", alt: "Enterprise office" },
+    href: "/services",
   },
 ];
 

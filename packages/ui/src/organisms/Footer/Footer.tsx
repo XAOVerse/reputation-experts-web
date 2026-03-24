@@ -48,6 +48,8 @@ const DEFAULT_OFFICES = [
 const DEFAULT_NAV: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Blog", href: "/blog" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy" },
   { label: "Terms of Service", href: "/terms" },
@@ -79,11 +81,20 @@ export function Footer({
               {logo ? (
                 <Image src={logo.src} alt={logo.alt} width={logo.width ?? 160} height={logo.height ?? 32} className="h-7 w-auto mb-2" />
               ) : (
-                <span className="text-[#1a1a1a] font-bold text-[15px] tracking-tight block mb-2">{brandName}</span>
+                <span className="flex items-center gap-2 mb-2">
+                  <svg width="20" height="22" viewBox="0 0 24 28" fill="none" className="shrink-0">
+                    <path d="M12 1L2 5.5V12C2 18.35 6.28 24.27 12 26C17.72 24.27 22 18.35 22 12V5.5L12 1Z" fill="#1a1a1a"/>
+                    <path d="M9 13L11 15L15.5 10.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="flex flex-col leading-none">
+                    <span className="text-[#1a1a1a] font-bold text-[12px] tracking-[0.18em] uppercase">Reputation</span>
+                    <span className="text-[#1a1a1a] font-normal text-[9px] tracking-[0.3em] uppercase">Experts</span>
+                  </span>
+                </span>
               )}
             </Link>
             <p className="text-[#999] text-[12px] max-w-[220px] leading-relaxed">
-              Professional online reputation management for businesses worldwide.
+              Helping individuals and businesses take control of their digital reputation.
             </p>
           </div>
 

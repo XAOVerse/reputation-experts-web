@@ -12,21 +12,21 @@ interface Step {
 
 const DEFAULT_STEPS: Step[] = [
   {
-    title: 'Identify the\nOnline Concern',
+    title: 'Assess Your\nDigital Presence',
     description:
-      'We review the reported content and assess how it may affect your business reputation and customer perception. Our team evaluates the context of the review or material and determines whether it may violate platform policies or community guidelines.',
+      'We conduct a thorough audit of your online reputation across search engines, review platforms, social media, and news sources. Our team identifies both risks and opportunities in your current digital footprint.',
     image: '/images/history-001.webp',
   },
   {
-    title: 'Create a\nCustom Solution',
+    title: 'Develop Your\nCustom Strategy',
     description:
-      'Based on the initial assessment, we develop a structured approach tailored to the specific situation. This includes identifying the most appropriate reporting channels, documentation requirements, and dispute options available through the relevant platforms.',
+      'Based on the audit findings, we create a tailored reputation management plan. This includes prioritised actions, content strategy, platform-specific approaches, and clear milestones for measuring progress.',
     image: '/images/history-002.webp',
   },
   {
-    title: 'Implement the\nReputation Program',
+    title: 'Execute &\nMonitor Results',
     description:
-      'Our team prepares the necessary reports and supporting documentation required for the submission process. We then assist with filing the case through the appropriate platform channels and monitor the progress while keeping you informed.',
+      'Our team implements the strategy across all relevant channels while providing regular updates and reporting. We continuously monitor your digital presence and adapt the approach as your reputation strengthens.',
     image: '/images/history-003.webp',
   },
 ];

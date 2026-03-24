@@ -13,9 +13,9 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reputation Experts — Protect Your Business from Harmful Online Reviews",
+  title: "Reputation Experts — Online Reputation Management",
   description:
-    "Reputation Experts helps businesses remove harmful, fake, and defamatory online reviews. Professional reputation management across Google, Yelp, Trustpilot, Glassdoor and 50+ platforms.",
+    "Reputation Experts helps individuals and businesses take control of their online presence. Professional reputation management, monitoring, and digital strategy across all major platforms.",
 };
 
 export default function HomePage() {
@@ -23,12 +23,12 @@ export default function HomePage() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <HeroSection
-        headline="Protect your Business from Harmful Online Reviews"
+        headline="Take Control of Your Online Reputation"
         highlightWord=""
-        quote="Professional assistance with assessing and disputing harmful or policy-violating online reviews and online content."
-        quoteBold="Fast assessment. Confidential process."
-        subQuote="Negative reviews can impact customer trust within hours. Understand your options before the damage spreads."
-        ctaLabel="Free Reputation Case Assessment"
+        quote="We help individuals and businesses manage, protect, and improve how they appear online — across search results, review platforms, and social media."
+        quoteBold="Expert guidance. Confidential process."
+        subQuote="Your online reputation shapes first impressions. Whether you're addressing unwanted content or building a stronger digital presence, we can help."
+        ctaLabel="Free Consultation"
         ctaLink="/contact"
         mediaCaption="Reputation Experts — Professional Online Reputation Management"
         mediaSrc="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
@@ -37,19 +37,19 @@ export default function HomePage() {
       {/* ── 2. Who We Serve ──────────────────────────────────────── */}
       <WhoWeServeSection
         heading="Who We Serve"
-        ctaLabel="Free Assessment"
+        ctaLabel="Get Started"
         ctaHref="/contact"
       />
 
       {/* ── 3. Services ──────────────────────────────────────────── */}
-      <ServicesSection heading="Services" />
+      <ServicesSection heading="Our Solutions" />
 
       {/* ── 4. Key Benefits ──────────────────────────────────────── */}
-      <KeyBenefitsSection heading="Key Benefits" />
+      <KeyBenefitsSection heading="Why Choose Us" />
 
       {/* ── 5. Testimonials ──────────────────────────────────────── */}
       <TestimonialsSection
-        heading="Testimonials"
+        heading="Client Stories"
         ctaLabel="Contact us"
         ctaHref="/contact"
       />
@@ -66,7 +66,7 @@ export default function HomePage() {
       <FAQSection heading="FAQ" />
 
       {/* ── 10. CTA (Assessment Form) ────────────────────────────── */}
-      <CTASection headline={"Free Reputation\nCase Assessment"} />
+      <CTASection headline={"Free Reputation\nConsultation"} />
     </main>
   );
 }

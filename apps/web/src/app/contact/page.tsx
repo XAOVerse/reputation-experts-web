@@ -4,7 +4,7 @@ import { CTASection } from "@repute/ui";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Reputation Experts for a free, confidential reputation case assessment. London-based online reputation management.",
+    "Get in touch with Reputation Experts for a free, confidential consultation. London-based online reputation management for individuals and businesses.",
 };
 
 export default function ContactPage() {
@@ -13,10 +13,10 @@ export default function ContactPage() {
       <section className="bg-[#f2f2f2] py-16 lg:py-24">
         <div className="max-w-[800px] mx-auto px-5 lg:px-8">
           <h1 className="text-[#0f0f0f] font-semibold text-[clamp(1.75rem,3.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em] mb-4">
-            Contact Us
+            Get in Touch
           </h1>
           <p className="text-[#666] text-[16px] leading-[1.75] mb-10">
-            Get in touch for a free, confidential case assessment. We will review your situation and provide honest advice on your options.
+            Ready to take control of your online reputation? Reach out for a free, confidential consultation. We&apos;ll review your situation and provide honest, expert guidance on your options.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
@@ -38,7 +38,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <CTASection headline={"Free Reputation\nCase Assessment"} />
+      <CTASection headline={"Free Reputation\nConsultation"} />
     </main>
   );
 }

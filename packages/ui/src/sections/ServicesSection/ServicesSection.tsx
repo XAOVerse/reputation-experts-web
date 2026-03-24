@@ -23,34 +23,34 @@ export interface Benefit { icon?: ImageAsset; title: string; description?: strin
 
 const DEFAULT_SERVICES: ServiceItem[] = [
   {
-    name: "Harmful Review Assessment",
-    description: "Our team evaluates every negative, fake, or defamatory review targeting your business across all major platforms. We identify content that violates platform policies and build the strongest possible case for removal or dispute.",
-    bullets: ["Yelp, Google, Trustpilot analysis", "Policy violation identification", "Removal priority scoring"],
+    name: "Online Reputation Audit",
+    description: "We conduct a comprehensive analysis of your digital footprint across search engines, review platforms, social media, and news sources to identify risks and opportunities for your online reputation.",
+    bullets: ["Search result analysis", "Platform presence review", "Risk assessment report"],
   },
   {
-    name: "Review Dispute Assistance",
-    description: "We formally dispute illegitimate reviews on your behalf, submitting platform-specific appeals that maximise removal rates. Our dispute writers know exactly what language platforms respond to.",
-    bullets: ["Platform-specific dispute letters", "Evidence compilation", "Appeal follow-ups"],
+    name: "Content & Search Management",
+    description: "We help shape what people see when they search for you or your business. Our team works to promote positive, accurate content and address problematic results using ethical, platform-compliant methods.",
+    bullets: ["Search result optimisation", "Content strategy", "Digital presence building"],
   },
   {
-    name: "Business Reputation Protection",
-    description: "Proactive strategies to strengthen your online reputation before harmful content can take hold — including review generation programs, brand monitoring, and positive content publishing.",
+    name: "Brand Monitoring & Alerts",
+    description: "Continuous monitoring of your brand, key personnel, and competitors across search results, review platforms, social media, and news outlets — with real-time alerts when new content appears.",
   },
   {
-    name: "Misleading Content Reports",
-    description: "We identify and formally report inaccurate, misleading, or defamatory content published on review sites, social media, news outlets, and consumer complaint boards.",
+    name: "Crisis & Issue Response",
+    description: "When a reputation issue arises, our team provides rapid assessment, strategic guidance, and hands-on support to minimise impact and restore confidence in your brand.",
   },
   {
-    name: "Reputation Monitoring",
-    description: "24/7 automated monitoring of your brand name and key personnel across search results, review platforms, social media, and news sources. Instant alerts on new threats.",
+    name: "Review Management",
+    description: "A holistic approach to managing your review presence — from encouraging authentic positive feedback to addressing policy-violating content through proper platform channels.",
   },
   {
-    name: "Reputation Recovery Strategy",
-    description: "A complete, long-term roadmap tailored to restore your brand's standing — combining removals, suppression of negative results, and amplification of positive content.",
+    name: "Digital PR & Authority Building",
+    description: "Strategic placement of thought leadership articles, press features, and authoritative content in recognised publications to strengthen your online credibility and visibility.",
   },
   {
-    name: "Major Global & Regional Media Publications",
-    description: "Placement of high-authority positive articles and press mentions in recognised publications to build credibility and push negative results further down in search.",
+    name: "Personal Reputation Management",
+    description: "Tailored solutions for executives, professionals, and public figures who need to manage their personal digital footprint, protect their privacy, and curate their online narrative.",
   },
 ];
 

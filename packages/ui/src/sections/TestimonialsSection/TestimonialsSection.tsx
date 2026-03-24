@@ -22,19 +22,19 @@ export interface TestimonialsSectionProps {
 
 const DEFAULT_TESTIMONIALS: TestimonialItem[] = [
   {
-    quote: "A competitor posted fake one-star reviews across our Google and Booking.com listings. Reputation Experts identified the policy violations, filed the disputes, and had them removed within three weeks. Our average rating recovered from 3.2 to 4.6.",
-    name: "Hotel General Manager",
-    title: "Boutique Hotel, Central London",
+    quote: "Reputation Experts completely transformed our online presence. Within three months, the first page of search results for our company went from damaging articles to positive, accurate content. The impact on new business enquiries has been remarkable.",
+    name: "Managing Director",
+    title: "Professional Services Firm, London",
   },
   {
-    quote: "We were losing bookings because of a single defamatory TripAdvisor review that made false claims about hygiene. The team built a strong case, submitted the appeal, and it was taken down. Worth every penny.",
-    name: "Operations Director",
-    title: "Restaurant Group, Manchester",
+    quote: "As a public-facing executive, I needed help managing my personal digital footprint. The team was discreet, strategic, and delivered results I didn't think were possible. I now feel confident about what people find when they search my name.",
+    name: "Senior Executive",
+    title: "Technology Company, UK",
   },
   {
-    quote: "Reputation Experts set up ongoing monitoring for our hotel brand across all major review platforms. We now get alerts within hours of a new negative review and can respond before it impacts bookings.",
-    name: "Marketing Manager",
-    title: "Hotel Chain, South East England",
+    quote: "Their monitoring service has been invaluable. We get real-time alerts on any mentions of our brand and can respond proactively. It's given us complete peace of mind about our online reputation.",
+    name: "Head of Marketing",
+    title: "Consumer Brand, South East England",
   },
 ];
 

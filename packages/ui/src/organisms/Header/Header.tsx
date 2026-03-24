@@ -8,6 +8,8 @@ import type { HeaderProps } from "./Header.types";
 const DEFAULT_NAV: import("../../types").NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
+  { label: "Blog", href: "/blog" },
+  { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -69,16 +71,16 @@ export function Header({
                 className="header__logo-image h-8 w-auto"
               />
             ) : (
-              <>
-                <span className="header__logo-icon w-[30px] h-[30px] rounded-full bg-[#1a1a1a] flex items-center justify-center shrink-0 group-hover:opacity-75 transition-opacity">
-                  <span className="header__logo-icon-letter text-white font-bold text-[13px] leading-none select-none">
-                    R
-                  </span>
+              <span className="header__logo-text flex items-center gap-2">
+                <svg width="22" height="24" viewBox="0 0 24 28" fill="none" className="shrink-0">
+                  <path d="M12 1L2 5.5V12C2 18.35 6.28 24.27 12 26C17.72 24.27 22 18.35 22 12V5.5L12 1Z" fill="#1a1a1a"/>
+                  <path d="M9 13L11 15L15.5 10.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span className="flex flex-col leading-none">
+                  <span className="text-[#1a1a1a] font-bold text-[12px] sm:text-[13px] tracking-[0.18em] uppercase">Reputation</span>
+                  <span className="text-[#1a1a1a] font-normal text-[9px] sm:text-[10px] tracking-[0.3em] uppercase">Experts</span>
                 </span>
-                <span className="header__logo-text text-[#1a1a1a] font-bold text-[13px] sm:text-[15px] tracking-tight truncate max-w-[120px] sm:max-w-none">
-                  {brandName}
-                </span>
-              </>
+              </span>
             )}
           </Link>
 

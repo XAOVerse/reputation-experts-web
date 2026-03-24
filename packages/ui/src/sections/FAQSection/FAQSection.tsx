@@ -17,23 +17,23 @@ export interface FAQSectionProps {
 const DEFAULT_ITEMS: FAQItem[] = [
   {
     question: "What does Reputation Experts do?",
-    answer: "Reputation Experts is a professional online reputation management firm. We specialise in identifying, disputing, and removing harmful, fake, or defamatory content about your business or personal brand across review platforms, search engines, and social media.",
+    answer: "We are a professional online reputation management firm. We help individuals and businesses manage, protect, and improve how they appear online — across search results, review platforms, social media, and news outlets.",
   },
   {
-    question: "Which platforms do you work with?",
-    answer: "We work across all major platforms including Google, Yelp, Trustpilot, Glassdoor, Facebook, BBB, Ripoff Report, PissedConsumer, and 50+ others. Our team has deep expertise in each platform's specific removal and dispute processes.",
+    question: "Which platforms and channels do you cover?",
+    answer: "We work across all major search engines, review platforms, social networks, and media outlets — including Google, Bing, Trustpilot, Glassdoor, LinkedIn, and many more. Our team understands the nuances of each platform.",
   },
   {
-    question: "How does the process work?",
-    answer: "Our process starts with a free case assessment where we audit all harmful content. We then develop a custom removal strategy, formally dispute policy-violating content, monitor progress, and provide regular updates until resolution.",
+    question: "How does your process work?",
+    answer: "Every engagement starts with a free, confidential consultation. We audit your current digital presence, identify risks and opportunities, develop a tailored strategy, and provide ongoing support and reporting as we execute.",
   },
   {
-    question: "What if the content does not violate platform rules?",
-    answer: "While we achieve a high removal success rate, not all content is guaranteed to be removed as platforms have final authority. In those cases, we deploy suppression strategies — publishing positive, high-authority content to push negatives lower in search results.",
+    question: "How long does it take to see results?",
+    answer: "Timelines vary depending on the complexity of each case. Some improvements can be seen within weeks, while comprehensive reputation rebuilding programmes typically show significant progress within two to four months.",
   },
   {
-    question: "Do you work with businesses or individuals?",
-    answer: "We work with both individuals and businesses of all sizes — from executives and public figures to SMBs and enterprise brands. Our solutions are tailored to the specific needs and scale of each client.",
+    question: "Do you work with individuals or just businesses?",
+    answer: "We work with both. Our clients include executives, professionals, public figures, startups, SMBs, and large enterprises. Every solution is tailored to the specific needs and scale of the engagement.",
   },
 ];
 

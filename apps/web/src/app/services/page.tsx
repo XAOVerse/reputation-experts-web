@@ -1,76 +1,95 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CTASection } from "@repute/ui";
 
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Our reputation management services include review assessment, dispute assistance, monitoring, and long-term reputation recovery for hospitality businesses.",
+    "Our reputation management services include online reputation audits, content management, brand monitoring, crisis response, and long-term digital strategy.",
 };
 
 const SERVICES = [
   {
-    name: "Harmful Review Assessment",
+    name: "Online Reputation Audit",
     description:
-      "We evaluate every negative, fake, or defamatory review targeting your business across all major platforms. We identify content that violates platform policies and build the strongest possible case for removal or dispute.",
-    includes: ["Google, TripAdvisor, Trustpilot, Booking.com analysis", "Platform policy violation identification", "Removal priority scoring", "Confidential written report"],
+      "A comprehensive analysis of your current digital footprint. We examine search results, review platforms, social media, news mentions, and data broker sites to give you a complete picture of how you appear online — and where the risks and opportunities lie.",
+    includes: ["Search engine results analysis", "Review platform presence audit", "Social media footprint review", "Detailed written report with recommendations"],
   },
   {
-    name: "Review Dispute Assistance",
+    name: "Content & Search Management",
     description:
-      "We formally dispute illegitimate reviews on your behalf, submitting platform-specific appeals that maximise removal rates. Our dispute writers know exactly what language and evidence each platform requires.",
-    includes: ["Platform-specific dispute submissions", "Evidence compilation and documentation", "Appeal follow-ups and escalations", "Progress reporting"],
+      "We help shape what people see when they search for you or your business. Our team develops and executes strategies to promote positive, accurate content while addressing problematic results through ethical, platform-compliant methods.",
+    includes: ["Search result optimisation", "Positive content creation and promotion", "Problematic content assessment", "Ongoing search monitoring"],
   },
   {
-    name: "Business Reputation Protection",
+    name: "Brand Monitoring & Alerts",
     description:
-      "Proactive strategies to strengthen your online reputation before harmful content can take hold — including review generation programmes, brand monitoring, and positive content publishing.",
-    includes: ["Review generation strategy", "Brand monitoring setup", "Positive content publishing", "Ongoing reputation health reporting"],
+      "Continuous, automated monitoring of your brand, key personnel, and competitors across search engines, review platforms, social media, and news outlets. Get notified the moment something new appears.",
+    includes: ["Real-time alert notifications", "Custom keyword tracking", "Competitive intelligence", "Monthly reputation health reports"],
   },
   {
-    name: "Misleading Content Reports",
+    name: "Crisis & Issue Response",
     description:
-      "We identify and formally report inaccurate, misleading, or defamatory content published on review sites, social media, news outlets, and consumer complaint boards.",
-    includes: ["Content analysis across platforms", "Formal reporting to platforms", "Legal referral coordination where needed", "Outcome tracking"],
+      "When a reputation issue arises — whether from negative press, viral social media, or an internal incident — our team provides rapid assessment, strategic guidance, and hands-on support to minimise impact and restore confidence.",
+    includes: ["Rapid situation assessment", "Response strategy development", "Stakeholder communication support", "Post-crisis reputation recovery"],
   },
   {
-    name: "Reputation Monitoring",
+    name: "Review Management",
     description:
-      "Automated monitoring of your brand name and key personnel across search results, review platforms, social media, and news sources. Receive alerts when new content is published about your business.",
-    includes: ["Real-time alerts on new reviews", "Search result monitoring", "Social media mention tracking", "Monthly reputation health reports"],
+      "A holistic approach to your review presence across all major platforms. We help you build authentic positive reviews, respond strategically to feedback, and address policy-violating content through proper channels.",
+    includes: ["Review generation strategy", "Response templates and guidance", "Policy-violation identification", "Platform-specific dispute management"],
   },
   {
-    name: "Reputation Recovery Strategy",
+    name: "Digital PR & Authority Building",
     description:
-      "A complete, long-term roadmap tailored to restore your brand's standing — combining removals, suppression of negative results, and amplification of positive content.",
-    includes: ["Full reputation audit", "Custom recovery roadmap", "Ongoing implementation support", "Quarterly strategy reviews"],
+      "Strategic placement of thought leadership articles, press features, and authoritative content in recognised publications to strengthen your credibility, improve search visibility, and build long-term digital equity.",
+    includes: ["Publication outreach and placement", "Thought leadership content creation", "Press feature coordination", "SEO-optimised content strategy"],
+  },
+  {
+    name: "Personal Reputation Management",
+    description:
+      "Tailored solutions for executives, professionals, and public figures who need to manage their personal digital footprint, protect their privacy, and curate the narrative that appears when people search their name.",
+    includes: ["Personal brand audit", "Privacy protection measures", "Executive profiling and content", "Ongoing personal monitoring"],
   },
 ];
 
 export default function ServicesPage() {
   return (
     <main className="pt-[64px]">
-      <section className="bg-[#f2f2f2] py-16 lg:py-24">
+      {/* Hero */}
+      <section className="bg-[#f2f2f2] py-20 lg:py-28">
         <div className="max-w-[1000px] mx-auto px-5 lg:px-8">
+          <p className="text-[#28b44f] text-[13px] font-semibold uppercase tracking-[0.15em] mb-4">Our Solutions</p>
           <h1 className="text-[#0f0f0f] font-semibold text-[clamp(1.75rem,3.5vw,2.75rem)] leading-[1.18] tracking-[-0.01em] mb-4">
-            Our Services
+            Reputation Management Services
           </h1>
-          <p className="text-[#666] text-[16px] leading-[1.75] mb-12 max-w-[600px]">
-            Professional reputation management services for hotels, restaurants, and hospitality businesses across the UK and internationally.
+          <p className="text-[#666] text-[16px] leading-[1.75] mb-0 max-w-[600px]">
+            Comprehensive solutions for individuals and businesses who want to take control of their online presence. Every engagement is tailored to your specific needs.
           </p>
+        </div>
+      </section>
 
-          <div className="space-y-8">
-            {SERVICES.map((service) => (
+      {/* Services List */}
+      <section className="bg-[#f5f5f3] py-12 lg:py-16">
+        <div className="max-w-[1000px] mx-auto px-5 lg:px-8">
+          <div className="space-y-6">
+            {SERVICES.map((service, i) => (
               <div
                 key={service.name}
                 className="bg-white rounded-2xl p-8 lg:p-10"
               >
-                <h2 className="text-[#0f0f0f] font-semibold text-[20px] mb-3">
-                  {service.name}
-                </h2>
-                <p className="text-[#555] text-[15px] leading-[1.75] mb-5">
+                <div className="flex items-start gap-4 mb-3">
+                  <span className="text-[#ccc] text-[13px] font-mono mt-1 shrink-0">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h2 className="text-[#0f0f0f] font-semibold text-[20px]">
+                    {service.name}
+                  </h2>
+                </div>
+                <p className="text-[#555] text-[15px] leading-[1.75] mb-5 ml-10">
                   {service.description}
                 </p>
-                <div className="border-t border-[#f0f0f0] pt-4">
+                <div className="border-t border-[#f0f0f0] pt-4 ml-10">
                   <p className="text-[#999] text-[12px] font-medium uppercase tracking-wider mb-3">
                     Includes
                   </p>
@@ -89,17 +108,11 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-
-          <div className="mt-12 text-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center rounded-full bg-[#28b44f] text-white text-[15px] font-medium px-8 py-3.5 hover:bg-[#1d9440] transition-colors"
-            >
-              Get a Free Assessment
-            </Link>
-          </div>
         </div>
       </section>
+
+      {/* CTA */}
+      <CTASection headline={"Ready to Get\nStarted?"} subheading="Every engagement begins with a free, confidential consultation." />
     </main>
   );
 }

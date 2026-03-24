@@ -7,11 +7,11 @@ import { CookieBanner } from "@repute/ui";
 
 export const metadata: Metadata = {
   title: {
-    default: "Reputation Experts — Protect Your Business from Harmful Online Reviews",
+    default: "Reputation Experts — Online Reputation Management",
     template: "%s | Reputation Experts",
   },
   description:
-    "Professional online reputation management. We remove harmful, fake, and defamatory reviews from Google, Yelp, Trustpilot, Glassdoor, and 50+ platforms.",
+    "Professional online reputation management for individuals and businesses. Take control of your digital presence across search results, review platforms, and social media.",
   metadataBase: new URL("https://reputation-experts.co.uk"),
   openGraph: {
     type: "website",

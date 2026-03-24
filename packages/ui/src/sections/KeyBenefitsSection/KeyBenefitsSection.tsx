@@ -18,39 +18,39 @@ export interface KeyBenefitsSectionProps {
 
 const DEFAULT_BENEFITS: Benefit[] = [
   {
-    icon: { src: "/images/asset-1.webp", alt: "Reputation Recovery Strategy icon" },
-    title: "Reputation Recovery Strategy",
-    description: "We help strengthen your online presence so accurate and positive information becomes more visible to potential customers.",
+    icon: { src: "/images/asset-1.webp", alt: "Tailored Strategy icon" },
+    title: "Tailored Strategy",
+    description: "Every client receives a custom reputation management plan designed around their unique situation, goals, and industry.",
   },
   {
-    icon: { src: "/images/asset-2.webp", alt: "Platform Policy Expertise icon" },
-    title: "Platform Policy Expertise",
-    description: "Our team understands how review platforms handle disputes and helps prepare reports aligned with their guidelines.",
+    icon: { src: "/images/asset-2.webp", alt: "Platform Expertise icon" },
+    title: "Platform Expertise",
+    description: "Deep knowledge of how search engines, review platforms, and social networks work — so we can navigate them effectively on your behalf.",
   },
   {
-    icon: { src: "/images/asset-3.webp", alt: "Global Platform Coverage icon" },
-    title: "Global Platform Coverage",
-    description: "Experience working with major review and content platforms worldwide.",
+    icon: { src: "/images/asset-3.webp", alt: "Global Reach icon" },
+    title: "Global Reach",
+    description: "We operate across all major platforms and markets worldwide, supporting clients wherever their reputation matters.",
   },
   {
-    icon: { src: "/images/asset-4.webp", alt: "Confidential Handling icon" },
-    title: "Confidential Handling",
-    description: "All cases are handled discreetly to protect your business, brand, and client relationships.",
+    icon: { src: "/images/asset-4.webp", alt: "Complete Confidentiality icon" },
+    title: "Complete Confidentiality",
+    description: "Every engagement is handled with full discretion. We protect your privacy at every stage of the process.",
   },
   {
-    icon: { src: "/images/asset-5.webp", alt: "Structured Dispute Process icon" },
-    title: "Structured Dispute Process",
-    description: "We guide you through a clear process for reporting harmful reviews and misleading content using appropriate channels.",
+    icon: { src: "/images/asset-5.webp", alt: "Ethical Methods icon" },
+    title: "Ethical Methods",
+    description: "We only use legitimate, platform-compliant approaches. No fake reviews, no manipulation — just professional reputation management.",
   },
   {
-    icon: { src: "/images/asset-6.webp", alt: "Reputation Monitoring icon" },
-    title: "Reputation Monitoring",
-    description: "Ongoing monitoring helps identify new reputation risks early so issues can be addressed before they escalate.",
+    icon: { src: "/images/asset-6.webp", alt: "Continuous Monitoring icon" },
+    title: "Continuous Monitoring",
+    description: "Real-time alerts and ongoing surveillance help you stay ahead of emerging issues before they become crises.",
   },
   {
-    icon: { src: "/images/asset-7.webp", alt: "Fast Case Assessment icon" },
-    title: "Fast Case Assessment",
-    description: "We quickly review harmful online content and determine whether it may violate platform policies.",
+    icon: { src: "/images/asset-7.webp", alt: "Fast Response icon" },
+    title: "Fast Response",
+    description: "We move quickly when your reputation is at stake — most clients receive an initial assessment within 24 hours.",
   },
 ];
 
