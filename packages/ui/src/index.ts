@@ -38,7 +38,6 @@ export { AwardsStrip } from "./sections/AwardsStrip";
 export type { AwardsStripProps, Mention, MediaCard } from "./sections/AwardsStrip";
 
 export { ProcessSection } from "./sections/ProcessSection";
-export type { ProcessSectionProps, ProcessStep } from "./sections/ProcessSection";
 
 export { PrivacySection } from "./sections/PrivacySection";
 export type { PrivacySectionProps, PrivacyFeature } from "./sections/PrivacySection";
