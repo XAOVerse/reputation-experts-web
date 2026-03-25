@@ -27,7 +27,7 @@ export function HeroSection({
   subQuote = "Your online reputation shapes first impressions. Whether you're addressing unwanted content or building a stronger digital presence, we can help.",
   ctaLabel = "Free Consultation",
   ctaLink = "/contact",
-  mediaSrc = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=80",
+  mediaSrc = "/images/hero-laptop.jpg",
 }: HeroSectionProps) {
   return (
     <section className="bg-[#f2f2f2] pt-[64px]" aria-label="Hero">
