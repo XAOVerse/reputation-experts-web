@@ -65,3 +65,77 @@ export function Footer({
   navItems = DEFAULT_NAV,
   socialLinks = DEFAULT_SOCIALS,
 }: FooterProps) {
+  const year = new Date().getFullYear();
+  const copyrightText = copyright ?? `\u00A9 ${year} Reputation Experts. All rights reserved.`;
+
+  return (
+    <footer className="bg-white border-t border-[#e8e8e8]" role="contentinfo">
+      <div className="max-w-[1200px] mx-auto px-5 lg:px-8 py-10 lg:py-12">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-8">
+          <div className="shrink-0">
+            <Link href="/" aria-label="Home">
+              {logo ? (
+                <Image src={logo.src} alt={logo.alt} width={logo.width ?? 160} height={logo.height ?? 32} className="h-7 w-auto mb-2" />
+              ) : (
+                <span className="flex items-center gap-2 mb-2">
+                  <svg width="20" height="22" viewBox="0 0 24 28" fill="none" className="shrink-0">
+                    <path d="M12 1L2 5.5V12C2 18.35 6.28 24.27 12 26C17.72 24.27 22 18.35 22 12V5.5L12 1Z" fill="#1a1a1a"/>
+                    <path d="M9 13L11 15L15.5 10.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="flex flex-col leading-none">
+                    <span className="text-[#1a1a1a] font-bold text-[12px] tracking-[0.18em] uppercase">Reputation</span>
+                    <span className="text-[#1a1a1a] font-normal text-[9px] tracking-[0.3em] uppercase">Experts</span>
+                  </span>
+                </span>
+              )}
+            </Link>
+            <p className="text-[#999] text-[12px] max-w-[220px] leading-relaxed">
+              Helping individuals and businesses take control of their digital reputation.
+            </p>
+          </div>
+
+          <nav className="flex flex-wrap gap-x-6 gap-y-2" aria-label="Footer navigation">
+            {navItems.map((item) => (
+              <Link key={item.href} href={item.href} className="text-[#666] text-[13px] hover:text-[#1a1a1a] transition-colors">
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-3">
+            {socialLinks.map((s) => (
+              <a
+                key={s.platform}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={s.label ?? s.platform}
+                className="w-8 h-8 rounded-full border border-[#e0e0e0] flex items-center justify-center text-[#888] hover:text-[#1a1a1a] hover:border-[#999] transition-colors"
+              >
+                {SOCIAL_ICONS[s.platform]}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-[#f0f0f0] mb-6" />
+
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <p className="text-[#aaa] text-[12px]">{copyrightText}</p>
+            <p className="text-[#ccc] text-[11px] mt-1">Reputation Experts Ltd \u2014 Company No. 16939732 \u2014 Registered in England &amp; Wales</p>
+          </div>
+
+          <div className="flex flex-wrap gap-4 lg:gap-8">
+            {offices.map((office) => (
+              <address key={office.city} className="not-italic text-[12px] text-[#bbb]">
+                <span className="font-medium text-[#888] mr-1">{office.city}:</span>
+                {office.address}
+              </address>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
