@@ -13,7 +13,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reputation Experts — Online Reputation Management",
+  title: "Reputation Experts \u2014 Online Reputation Management",
   description:
     "Reputation Experts helps individuals and businesses take control of their online presence. Professional reputation management, monitoring, and digital strategy across all major platforms.",
 };
@@ -21,33 +21,33 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <main>
-      {/* ── 1. Hero ──────────────────────────────────────────────── */}
+      {/* 1. Hero */}
       <HeroSection
         headline="Take Control of Your Online Reputation"
         highlightWord=""
-        quote="We help individuals and businesses manage, protect, and improve how they appear online — across search results, review platforms, and social media."
+        quote="We help individuals and businesses manage, protect, and improve how they appear online \u2014 across search results, review platforms, and social media."
         quoteBold="Expert guidance. Confidential process."
         subQuote="Your online reputation shapes first impressions. Whether you're addressing unwanted content or building a stronger digital presence, we can help."
         ctaLabel="Free Consultation"
         ctaLink="/contact"
-        mediaCaption="Reputation Experts — Professional Online Reputation Management"
+        mediaCaption="Reputation Experts \u2014 Professional Online Reputation Management"
         mediaSrc="https://images.unsplash.com/photo-1497366216548-37526070297c?w=900&q=80"
       />
 
-      {/* ── 2. Who We Serve ──────────────────────────────────────── */}
+      {/* 2. Who We Serve */}
       <WhoWeServeSection
         heading="Who We Serve"
         ctaLabel="Get Started"
         ctaHref="/contact"
       />
 
-      {/* ── 3. Services ──────────────────────────────────────────── */}
+      {/* 3. Services */}
       <ServicesSection heading="Our Solutions" />
 
-      {/* ── 4. Key Benefits ──────────────────────────────────────── */}
+      {/* 4. Key Benefits */}
       <KeyBenefitsSection heading="Why Choose Us" />
 
-      {/* ── 5. Testimonials ──────────────────────────────────────── */}
+      {/* 5. Testimonials */}
       <TestimonialsSection
         heading="Client Stories"
         ctaLabel="Contact us"
@@ -56,17 +56,17 @@ export default function HomePage() {
 
       {/* Awards section hidden until PR articles are published
               <AwardsStrip heading="As Featured In" /> */}
-      {/* ── 7. Our Process ───────────────────────────────────────── */}
+      {/* 7. Our Process */}
             <ProcessSection />
 
-      {/* ── 8. Privacy ───────────────────────────────────────────── */}
+      {/* 8. Privacy */}
       <PrivacySection heading="How We Safeguard Your Privacy" />
 
-      {/* ── 9. FAQ ───────────────────────────────────────────────── */}
+      {/* 9. FAQ */}
       <FAQSection heading="FAQ" />
 
-      {/* ── 10. CTA (Assessment Form) ────────────────────────────── */}
-      <CTASection headline={"Free Reputation\nConsultation"} />
+      {/* 10. CTA (Assessment Form) */}
+      <CTASection headline={"Free Reputation\nCase Assessment"} />
     </main>
   );
 }
