@@ -9,8 +9,8 @@ export interface CTASectionProps {
 }
 
 export function CTASection({
-  headline = "Free Reputation\nConsultation",
-  subheading = "Take the first step. Speak with our experts today.",
+  headline = "Free Reputation\nCase Assessment",
+  subheading = "Get a solution fast. Talk to our experts.",
 }: CTASectionProps) {
   const [form, setForm] = useState({ name: "", email: "", message: "", agreed: false });
   const [msgLen, setMsgLen] = useState(0);
@@ -132,4 +132,4 @@ export function CTASection({
       </div>
     </section>
   );
-}
+                      }
