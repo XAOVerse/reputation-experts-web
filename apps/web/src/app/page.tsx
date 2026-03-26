@@ -13,7 +13,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reputation Experts \u2014 Online Reputation Management",
+  title: "Reputation Experts — Online Reputation Management",
   description:
     "Reputation Experts helps individuals and businesses take control of their online presence. Professional reputation management, monitoring, and digital strategy across all major platforms.",
 };
@@ -25,12 +25,12 @@ export default function HomePage() {
       <HeroSection
         headline="Take Control of Your Online Reputation"
         highlightWord=""
-        quote="We help individuals and businesses manage, protect, and improve how they appear online \u2014 across search results, review platforms, and social media."
+        quote="We help individuals and businesses manage, protect, and improve how they appear online — across search results, review platforms, and social media."
         quoteBold="Expert guidance. Confidential process."
         subQuote="Your online reputation shapes first impressions. Whether you're addressing unwanted content or building a stronger digital presence, we can help."
         ctaLabel="Free Consultation"
         ctaLink="/contact"
-        mediaCaption="Reputation Experts \u2014 Professional Online Reputation Management"
+        mediaCaption="Reputation Experts — Professional Online Reputation Management"
 mediaSrc="/images/hero-laptop.jpg"      />
 
       {/* 2. Who We Serve */}
