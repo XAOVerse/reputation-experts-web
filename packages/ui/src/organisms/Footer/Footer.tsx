@@ -123,7 +123,7 @@ export function Footer({
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <p className="text-[#aaa] text-[12px]">{copyrightText}</p>
-            <p className="text-[#ccc] text-[11px] mt-1">Reputation Experts Ltd \u2014 Company No. 16939732 \u2014 Registered in England &amp; Wales</p>
+            <p className="text-[#ccc] text-[11px] mt-1">Reputation Experts Ltd — Company No. 16939732 — Registered in England &amp; Wales</p>
           </div>
 
           <div className="flex flex-wrap gap-4 lg:gap-8">
