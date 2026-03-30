@@ -174,12 +174,12 @@ export default function DentalClinicPage() {
               {
                 title: "Google 'AI Overview'",
                 description:
-                  'Reputation Experts keeps your business visible in AI-driven search by optimising your Google Business Profile, driving consistent clients' reviews, and structuring your online presence so Google surfaces you, not your competitors',
+                  "Reputation Experts keeps your business visible in AI-driven search by optimising your Google Business Profile, driving consistent clients' reviews, and structuring your online presence so Google surfaces you, not your competitors",
               },
               {
                 title: 'Search Result Management',
                 description:
-                  'If negative articles, forum posts, or outdated content ranks for your practice name, we push it down with positive, authoritative content â building a first page you're proud of.',
+                  "If negative articles, forum posts, or outdated content ranks for your practice name, we push it down with positive, authoritative content â building a first page you're proud of.",
               },
               {
                 title: 'Digital PR & Authority',
@@ -189,7 +189,7 @@ export default function DentalClinicPage() {
               {
                 title: 'Reputation Protection',
                 description:
-                  'Real-time alerts whenever your practice is mentioned online. New review? We notify you. Negative article? We flag it. So you're never caught off guard again.',
+                  "Real-time alerts whenever your practice is mentioned online. New review? We notify you. Negative article? We flag it. So you're never caught off guard again.",
               },
             ].map((card) => (
               <div
