@@ -19,7 +19,14 @@ export default function ContactPage() {
             Ready to take control of your online reputation? Reach out for a free, confidential consultation. We&apos;ll review your situation and provide honest, expert guidance on your options.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white rounded-2xl p-6">
+              <p className="text-[#999] text-[12px] font-medium uppercase tracking-wider mb-2">Phone</p>
+              <a href="tel:08006546009" className="text-[#0f0f0f] text-[15px] font-medium hover:text-[#28b44f] transition-colors">
+                0800 654 6009
+              </a>
+            </div>
+
             <div className="bg-white rounded-2xl p-6">
               <p className="text-[#999] text-[12px] font-medium uppercase tracking-wider mb-2">Email</p>
               <a href="mailto:info@reputation-experts.co.uk" className="text-[#0f0f0f] text-[15px] font-medium hover:text-[#28b44f] transition-colors">
