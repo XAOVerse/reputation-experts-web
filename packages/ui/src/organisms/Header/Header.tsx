@@ -1,4 +1,4 @@
-"use client";
+TEST_REPLACEMENT"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -103,29 +103,21 @@ export function Header({
           {/* Right controls */}
           <div className="header__controls flex items-center gap-1.5 sm:gap-2.5 ml-auto md:ml-0">
 
-            {/* Desktop: Services outline pill */}
-            <Link
-              href={servicesHref}
-              className="header__services-btn hidden md:inline-flex items-center gap-[6px] rounded-full border border-[#d0d0d0] bg-white text-[#1a1a1a] text-[13px] font-medium px-4 py-[7px] hover:border-[#999] hover:bg-[#f7f7f7] transition-all duration-150"
+            {/* Talk To Expert — orange filled pill (mailto CTA) */}
+            <a
+              href="mailto:info@reputation-experts.co.uk"
+              className="header__cta-expert inline-flex items-center whitespace-nowrap rounded-full bg-[#e8503a] text-white text-[12px] sm:text-[13px] font-semibold px-3.5 sm:px-5 py-[7px] hover:bg-[#d4432f] transition-colors"
             >
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" className="header__services-icon opacity-60">
-                <path
-                  d="M8 1v14M1 8h14M3.05 3.05l9.9 9.9M12.95 3.05l-9.9 9.9"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                />
-              </svg>
-              {servicesLabel}
-            </Link>
+              Talk To Expert
+            </a>
 
-            {/* Green CTA — all screens */}
-            <Link
-              href={ctaLink}
-              className="header__cta inline-flex items-center whitespace-nowrap rounded-full bg-[#28b44f] text-white text-[12px] sm:text-[13px] font-semibold px-3.5 sm:px-5 py-[7px] hover:bg-[#1d9440] transition-colors"
+            {/* Phone number — black filled pill */}
+            <a
+              href="tel:08006546009"
+              className="header__cta-phone hidden sm:inline-flex items-center whitespace-nowrap rounded-full bg-[#1a1a1a] text-white text-[12px] sm:text-[13px] font-semibold px-3.5 sm:px-5 py-[7px] hover:bg-[#333] transition-colors"
             >
-              {ctaLabel}
-            </Link>
+              0800 654 6009
+            </a>
 
             {/* Mobile: ⠿ Menu pill */}
             <button
