@@ -1,4 +1,4 @@
-TEST_REPLACEMENT"use client";
+"use client";
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
@@ -119,7 +119,7 @@ export function Header({
               0800 654 6009
             </a>
 
-            {/* Mobile: ⠿ Menu pill */}
+            {/* Mobile: Menu pill */}
             <button
               onClick={() => setMenuOpen(true)}
               className="header__menu-btn md:hidden inline-flex items-center gap-1.5 rounded-full border border-[#d0d0d0] bg-white text-[#1a1a1a] text-[12px] sm:text-[13px] font-medium px-3 sm:px-4 py-[7px] hover:border-[#999] hover:bg-[#f7f7f7] transition-all duration-150 focus-visible:outline-none"
@@ -139,7 +139,7 @@ export function Header({
         </div>
       </header>
 
-      {/* ── Mobile menu — floating rounded card ───────────────── */}
+      {/* ── Mobile menu — floating rounded card */}
       {menuOpen && (
         <div
           className="header__mobile-overlay fixed inset-0 z-[60] md:hidden"
@@ -154,7 +154,7 @@ export function Header({
             className="header__mobile-card absolute top-4 left-4 right-4 bg-white rounded-3xl shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Top row: × close + red dot */}
+            {/* Top row: close + red dot */}
             <div className="header__mobile-toprow flex items-center justify-between px-7 pt-7 pb-5">
               <button
                 onClick={() => setMenuOpen(false)}
@@ -275,3 +275,4 @@ export function Header({
     </>
   );
 }
+
