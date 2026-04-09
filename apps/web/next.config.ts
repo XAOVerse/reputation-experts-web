@@ -13,7 +13,18 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.cloudinary.com" },
     ],
   },
-
+  async rewrites() {
+    return [
+      {
+        source: "/dental-clinics/:path*",
+        destination: "https://repute-expert-web-dusky.vercel.app/dental-clinics/:path*",
+      },
+      {
+        source: "/dental-clinics",
+        destination: "https://repute-expert-web-dusky.vercel.app/dental-clinics",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
