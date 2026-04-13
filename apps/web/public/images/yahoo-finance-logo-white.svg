@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" width="240" height="80">
+  <defs>
+    <style>
+      .yahoo-text { font-family: Arial, sans-serif; font-size: 40px; font-weight: bold; fill: #fff; }
+      .finance-text { font-family: Arial, sans-serif; font-size: 32px; fill: #fff; }
+    </style>
+  </defs>
+  <text x="50" y="50" class="yahoo-text">Yahoo</text>
+  <text x="150" y="50" class="finance-text">Finance</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <style>
+      .cbs-eye { fill: #000; }
+    </style>
+  </defs>
+  <!-- CBS eye logo simplified -->
+  <ellipse cx="60" cy="60" rx="45" ry="40" class="cbs-eye"/>
+  <circle cx="60" cy="60" r="20" fill="#fff"/>
+  <circle cx="60" cy="60" r="12" fill="#000"/>
+</svg>

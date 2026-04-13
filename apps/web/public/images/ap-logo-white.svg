@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <style>
+      .ap-text { font-family: Arial, sans-serif; font-size: 64px; font-weight: bold; fill: #fff; }
+    </style>
+  </defs>
+  <rect width="120" height="120" fill="none"/>
+  <text x="60" y="80" text-anchor="middle" class="ap-text">AP</text>
+</svg>
