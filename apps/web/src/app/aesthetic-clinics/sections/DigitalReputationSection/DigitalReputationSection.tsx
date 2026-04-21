@@ -34,7 +34,7 @@ export function DigitalReputationSection({
   heading = "Digital reputation management that covers every angle",
   description = "Our approach brings together review management, reputation building, Google AI Overview optimisation, ChatGPT recommendation positioning, and major online media publications - all in one integrated service built specifically for UK cosmetic and aesthetics clinics. Every strategy is shaped around how patients actually search for and choose their aesthetics clinic online.",
   tags = DEFAULT_TAGS,
-  imageSrc = "/images/aesthetic-1.png",
+  imageSrc = "/images/dental-2.png",
   imageAlt = "Reputation management wheel showing all service areas",
 }: DigitalReputationSectionProps) {
   return (

@@ -48,7 +48,7 @@ export function GoogleAIOverviewSection() {
           <div className="flex items-center justify-center">
             <div className="w-full max-w-[580px] rounded-2xl overflow-hidden shadow-[0_4px_32px_rgba(0,0,0,0.08)] border border-[#e8e8e8]">
               <Image
-                src="/images/aesthetic-1.png"
+                src="/images/dental-3.png"
                 alt="Google AI Overview search result example"
                 width={1160}
                 height={800}
