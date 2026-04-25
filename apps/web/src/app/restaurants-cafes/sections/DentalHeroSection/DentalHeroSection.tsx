@@ -30,7 +30,7 @@ export function DentalHeroSection({
     >
       <div className="dental-hero__inner max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
         {/* ── Text block ─────────────────────────────────────── */}
-        <div className="dental-hero__text pt-10 sm:pt-14 lg:pt-16 pb-6 sm:pb-8 lg:pb-10 max-w-[880px]">
+        <div className="dental-hero__text pt-10 sm:pt-14 lg:pt-16 pb-6 sm:pb-8 lg:pb-10">
           <h1
             className={`${styles.fadeUp} dental-hero__heading text-[#0f0f0f] font-semibold leading-[1.12] tracking-[-0.02em] mb-5 lg:mb-6`}
             style={{
@@ -42,7 +42,7 @@ export function DentalHeroSection({
           </h1>
 
           <p
-            className={`${styles.fadeUp} dental-hero__subtitle text-[#555] text-[15px] sm:text-[16px] leading-[1.7] mb-6 lg:mb-8 max-w-[720px]`}
+            className={`${styles.fadeUp} dental-hero__subtitle text-[#555] text-[15px] sm:text-[16px] leading-[1.7] mb-6 lg:mb-8 max-w-[780px]`}
             style={{ animationDelay: "0.15s" }}
           >
             {subtitle}
