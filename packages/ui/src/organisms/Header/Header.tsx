@@ -1,9 +1,22 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { HeaderProps } from "./Header.types";
+
+const SOLUTIONS: { label: string; href: string }[] = [
+  { label: "Solutions for Dental Clinics", href: "/dental-clinics" },
+  { label: "Solutions for Aesthetic Clinics", href: "/aesthetic-clinics" },
+  { label: "Solutions for Laser Eye Surgery Clinics", href: "/laser-eye-surgery" },
+  { label: "Solutions for Restaurants & Cafés", href: "/restaurants-cafes" },
+  { label: "Solutions for Hotels & Accommodation", href: "/hotels-accommodation" },
+  { label: "Solutions for Automotive Dealerships", href: "/automotive-dealerships" },
+  { label: "Solutions for Construction & Building", href: "/construction-contractors" },
+  { label: "Solutions for Event Venues", href: "/event-venues" },
+  { label: "Solutions for Bars, Lounges & Entertainment", href: "/bars-lounges-entertainment" },
+  { label: "Solutions for Home Services", href: "/home-services" },
+];
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
   { label: "About", href: "/about" },
@@ -29,6 +42,9 @@ export function Header({
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [desktopSolutionsOpen, setDesktopSolutionsOpen] = useState(false);
+  const solutionsTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -42,6 +58,17 @@ export function Header({
       document.body.style.overflow = "";
     };
   }, [menuOpen]);
+
+  const handleSolutionsEnter = () => {
+    if (solutionsTimeout.current) clearTimeout(solutionsTimeout.current);
+    setDesktopSolutionsOpen(true);
+  };
+
+  const handleSolutionsLeave = () => {
+    solutionsTimeout.current = setTimeout(() => {
+      setDesktopSolutionsOpen(false);
+    }, 150);
+  };
 
   return (
     <>
@@ -98,6 +125,58 @@ export function Header({
                 {item.label}
               </Link>
             ))}
+
+            {/* Solutions dropdown */}
+            <div
+              className="relative"
+              onMouseEnter={handleSolutionsEnter}
+              onMouseLeave={handleSolutionsLeave}
+            >
+              <button
+                className="header__nav-link text-[#1a1a1a] text-[13.5px] font-medium hover:text-[#555] transition-colors flex items-center gap-1 focus-visible:outline-none"
+                onClick={() => setDesktopSolutionsOpen((v) => !v)}
+              >
+                Solutions
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  className={`transition-transform duration-200 opacity-60 ${
+                    desktopSolutionsOpen ? "rotate-180" : ""
+                  }`}
+                >
+                  <path
+                    d="M4 6l4 4 4-4"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+
+              {desktopSolutionsOpen && (
+                <div
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-3"
+                  onMouseEnter={handleSolutionsEnter}
+                  onMouseLeave={handleSolutionsLeave}
+                >
+                  <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-[#f0f0f0] py-3 min-w-[320px]">
+                    {SOLUTIONS.map((sol) => (
+                      <Link
+                        key={sol.href}
+                        href={sol.href}
+                        className="block px-5 py-2.5 text-[13.5px] text-[#1a1a1a] font-medium hover:bg-[#f7f7f7] hover:text-[#555] transition-colors whitespace-nowrap"
+                        onClick={() => setDesktopSolutionsOpen(false)}
+                      >
+                        {sol.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           {/* Right controls */}
@@ -151,7 +230,7 @@ export function Header({
           onClick={() => setMenuOpen(false)}
         >
           <div
-            className="header__mobile-card absolute top-4 left-4 right-4 bg-white rounded-3xl shadow-2xl"
+            className="header__mobile-card absolute top-4 left-4 right-4 bg-white rounded-3xl shadow-2xl max-h-[calc(100vh-32px)] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Top row: close + red dot */}
@@ -201,6 +280,47 @@ export function Header({
                     />
                   </svg>
                 </button>
+              </div>
+
+              {/* Solutions — expandable with chevron (mobile) */}
+              <div className="header__mobile-nav-divider border-t border-[#f0f0f0]">
+                <button
+                  onClick={() => setSolutionsOpen((v) => !v)}
+                  className="w-full flex items-center justify-between py-5 text-[#1a1a1a] text-[17px] font-medium focus-visible:outline-none"
+                >
+                  Solutions
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    className={`transition-transform duration-200 opacity-50 ${
+                      solutionsOpen ? "rotate-180" : ""
+                    }`}
+                  >
+                    <path
+                      d="M4 6l4 4 4-4"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
+                {solutionsOpen && (
+                  <div className="pb-3">
+                    {SOLUTIONS.map((sol) => (
+                      <Link
+                        key={sol.href}
+                        href={sol.href}
+                        onClick={() => setMenuOpen(false)}
+                        className="block py-2.5 pl-4 text-[15px] text-[#555] font-normal hover:text-[#1a1a1a] transition-colors"
+                      >
+                        {sol.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {navItems.map((item) => (
@@ -275,4 +395,3 @@ export function Header({
     </>
   );
 }
-
