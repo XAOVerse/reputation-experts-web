@@ -23,7 +23,7 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Personal Care & Beauty businesses' online reputations."
+        headline="We protect and grow Salon & Beauty professionals' online reputations."
         subtitle="Clients check reviews before booking a salon or barber. We remove damaging reviews, strengthen your ratings, and position your business where clients are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
