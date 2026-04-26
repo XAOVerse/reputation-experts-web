@@ -42,7 +42,7 @@ export function DentalHeroSection({
           </h1>
 
           <p
-            className={`${styles.fadeUp} dental-hero__subtitle text-[#555] text-[15px] sm:text-[16px] leading-[1.7] mb-6 lg:mb-8 max-w-[580px]`}
+            className={`${styles.fadeUp} dental-hero__subtitle text-[#555] text-[15px] sm:text-[16px] leading-[1.7] mb-6 lg:mb-8 max-w-[920px]`}
             style={{ animationDelay: "0.15s" }}
           >
             {subtitle}
