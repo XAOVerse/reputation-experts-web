@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Laser Eye Surgery Clinics — Reputation Management for Laser Eye & Vision Correction Clinics",
+  title: "Laser Eye Surgery Clinics - Reputation Management for Laser Eye & Vision Correction Clinics",
   description:
     "We protect and grow the online reputations of laser eye surgery clinics. Remove damaging reviews, strengthen your ratings, and turn trust into more consultations and procedures.",
 };
@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Laser Eye Surgery Clinics' online reputations."
-        subtitle="Patients research extensively before trusting someone with their eyesight. We remove damaging reviews, strengthen your ratings, and position your clinic where patients are searching — on Google, Trustpilot, RealSelf, in AI Overviews, and across AI-driven search."
+        subtitle="Patients research extensively before trusting someone with their eyesight. We remove damaging reviews, strengthen your ratings, and position your clinic where patients are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/laser-eye-1.png"

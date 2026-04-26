@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Construction & Building Contractors — Reputation Management for Builders & Contractors",
+  title: "Construction & Building Contractors - Reputation Management for Builders & Contractors",
   description:
     "We protect and grow the online reputations of construction companies and building contractors. Remove damaging reviews, strengthen your ratings, and win more contracts with professional reputation management.",
 };
@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Construction & Building Contractors' online reputations."
-        subtitle="Your reputation is checked before every quote is accepted. We remove damaging reviews, strengthen your ratings, and position your construction business where clients are searching — on Google, Checkatrade, MyBuilder, Trustpilot, and across AI-driven search."
+        subtitle="Your reputation is checked before every quote is accepted. We remove damaging reviews, strengthen your ratings, and position your business where clients are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/construction-1.png"

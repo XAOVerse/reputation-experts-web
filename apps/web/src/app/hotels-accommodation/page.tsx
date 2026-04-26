@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Hotels & Accommodation — Reputation Management for Hotels, B&Bs & Serviced Apartments",
+  title: "Hotels & Accommodation - Reputation Management for Hotels, B&Bs & Serviced Apartments",
   description:
     "We protect and grow the online reputations of hotels and accommodation providers. Remove damaging reviews, strengthen your ratings across Google, Booking.com, TripAdvisor, and turn trust into more bookings.",
 };
@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Hotels & Accommodation providers' online reputations."
-        subtitle="Your reputation is the first thing guests see before they book. We remove damaging reviews, strengthen your ratings across Google, Booking.com, TripAdvisor, Expedia, and position your property where travellers are searching — including AI-driven search."
+        subtitle="Your reputation is the first thing guests see before they book. We remove damaging reviews, strengthen your ratings, and position your property where travellers are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/hotels-1.png"

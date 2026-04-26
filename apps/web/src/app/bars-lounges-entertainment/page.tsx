@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Bars, Lounges & Entertainment — Reputation Management for Bars, Clubs & Entertainment Venues",
+  title: "Bars, Lounges & Entertainment - Reputation Management for Bars, Clubs & Entertainment Venues",
   description:
     "We protect and grow the online reputations of bars, lounges, and entertainment venues. Remove damaging reviews, strengthen your ratings across Google, TripAdvisor, and Yelp, and turn trust into more footfall and bookings.",
 };
@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Bars, Lounges & Entertainment venues' online reputations."
-        subtitle="One viral bad review can empty your venue on a Saturday night. We remove damaging reviews, strengthen your ratings across Google, TripAdvisor, Yelp, and DesignMyNight, and position your venue where nightlife seekers are searching — including AI-driven search."
+        subtitle="One viral bad review can empty your venue on a Saturday night. We remove damaging reviews, strengthen your ratings, and position your venue where customers are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/bars-entertainment-1.png"

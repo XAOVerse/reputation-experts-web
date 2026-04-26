@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Aesthetic Clinics — Reputation Management for Cosmetic & Aesthetics Clinics",
+  title: "Aesthetic Clinics - Reputation Management for Cosmetic & Aesthetics Clinics",
   description:
     "We protect and grow cosmetic & aesthetics clinics' online reputations. Improve bookings, build trust, and increase revenue with professional reputation management.",
 };
@@ -23,7 +23,7 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Cosmetic & Aesthetics Clinics' online reputations."
+        headline="We protect and grow Aesthetic Clinics' online reputations."
         subtitle="Improving online reputation directly affects clinics by helping them gain more bookings, build trust, and increase sales."
         ctaLabel="Free Assessment"
         ctaLink="/contact"

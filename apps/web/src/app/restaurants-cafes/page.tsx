@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Restaurants & Cafes — Reputation Management for Restaurants & Cafes",
+  title: "Restaurants & Cafes - Reputation Management for Restaurants & Cafes",
   description:
     "We protect, repair, and grow the online reputations of restaurants and cafes. Deal with damaging reviews, strengthen your score across Google, TripAdvisor, OpenTable, Facebook, Yelp and turn trust into more bookings.",
 };

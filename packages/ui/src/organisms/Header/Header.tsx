@@ -20,8 +20,6 @@ const SOLUTIONS: { label: string; href: string }[] = [
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
   { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Blog", href: "/blog" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];
@@ -116,17 +114,7 @@ export function Header({
             className="header__nav hidden md:flex flex-1 items-center justify-center gap-7"
             aria-label="Main navigation"
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="header__nav-link text-[#1a1a1a] text-[13.5px] font-medium hover:text-[#555] transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-
-            {/* Solutions dropdown */}
+            {/* Solutions dropdown — first position */}
             <div
               className="relative"
               onMouseEnter={handleSolutionsEnter}
@@ -177,6 +165,16 @@ export function Header({
                 </div>
               )}
             </div>
+
+            {navItems.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="header__nav-link text-[#1a1a1a] text-[13.5px] font-medium hover:text-[#555] transition-colors"
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
 
           {/* Right controls */}
@@ -254,33 +252,6 @@ export function Header({
 
             {/* Nav items with dividers */}
             <nav className="header__mobile-nav flex flex-col px-7 pb-2">
-
-              {/* Services — expandable with chevron */}
-              <div className="header__mobile-nav-divider border-t border-[#f0f0f0]">
-                <button
-                  onClick={() => setServicesOpen((v) => !v)}
-                  className="header__mobile-services-btn w-full flex items-center justify-between py-5 text-[#1a1a1a] text-[17px] font-medium focus-visible:outline-none"
-                >
-                  {servicesLabel}
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    className={`transition-transform duration-200 opacity-50 ${
-                      servicesOpen ? "rotate-180" : ""
-                    }`}
-                  >
-                    <path
-                      d="M4 6l4 4 4-4"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
 
               {/* Solutions — expandable with chevron (mobile) */}
               <div className="header__mobile-nav-divider border-t border-[#f0f0f0]">

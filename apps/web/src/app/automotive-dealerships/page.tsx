@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Automotive Dealerships — Reputation Management for Dealerships & Garages",
+  title: "Automotive Dealerships - Reputation Management for Dealerships & Garages",
   description:
     "We protect and grow automotive dealerships & garages online reputations. We remove damaging reviews, strengthen your ratings, and position your dealership where customers are searching.",
 };
@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Automotive Dealerships & Garages online reputations."
-        subtitle="Your reputation influences buyers before your team speaks to them. We remove damaging reviews, strengthen your ratings, and position your dealership or garage where customers are searching, on Google, Autotrader, in AI Overviews, and across AI-driven search."
+        subtitle="Your reputation influences buyers before your team speaks to them. We remove damaging reviews, strengthen your ratings, and position your dealership where customers are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/automotive-1.png"

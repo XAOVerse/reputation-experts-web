@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Dental Clinics — Reputation Management for Dental Practices",
+  title: "Dental Clinics - Reputation Management for Dental Practices",
   description:
     "We protect and grow dental clinics' online reputations. Improve bookings, build trust, and increase revenue with professional reputation management.",
 };
