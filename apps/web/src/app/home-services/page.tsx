@@ -24,7 +24,7 @@ export default function Home2Page() {
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
         headline="We protect and grow Home Service professionals' online reputations."
-        subtitle="Homeowners check reviews before hiring anyone. We remove damaging reviews, strengthen your ratings across Google, Checkatrade, Trustpilot, MyBuilder, and Bark, and position your trade business where customers are searching — including AI-driven search."
+        subtitle="Homeowners check reviews before hiring anyone. We remove damaging reviews, strengthen your ratings across Google, Checkatrade, Trustpilot, MyBuilder, and Bark — and position your trade business where customers are searching, including AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/home-services-1.png"
