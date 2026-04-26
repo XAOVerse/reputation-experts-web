@@ -16,6 +16,7 @@ const SOLUTIONS: { label: string; href: string }[] = [
   { label: "Solutions for Event Venues", href: "/event-venues" },
   { label: "Solutions for Bars, Lounges & Entertainment", href: "/bars-lounges-entertainment" },
   { label: "Solutions for Home Services", href: "/home-services" },
+  { label: "Solutions for Childcare & Education", href: "/childcare-education" },
 ];
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
