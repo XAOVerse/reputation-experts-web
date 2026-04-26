@@ -17,6 +17,7 @@ const SOLUTIONS: { label: string; href: string }[] = [
   { label: "Solutions for Bars, Lounges & Entertainment", href: "/bars-lounges-entertainment" },
   { label: "Solutions for Home Services", href: "/home-services" },
   { label: "Solutions for Childcare & Education", href: "/childcare-education" },
+  { label: "Solutions for Personal Care & Beauty", href: "/personal-care-beauty" },
 ];
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
