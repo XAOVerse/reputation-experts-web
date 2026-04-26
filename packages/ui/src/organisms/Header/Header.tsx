@@ -19,6 +19,13 @@ const SOLUTIONS: { label: string; href: string }[] = [
   { label: "Solutions for Childcare & Education", href: "/childcare-education" },
   { label: "Solutions for Personal Care & Beauty", href: "/personal-care-beauty" },
   { label: "Solutions for Health & Wellbeing", href: "/health-wellbeing" },
+  { label: "Solutions for Fitness & Wellness", href: "/fitness-wellness" },
+  { label: "Solutions for Takeaways & Food Retail", href: "/takeaways-food-retail" },
+  { label: "Solutions for Professional Services", href: "/professional-services" },
+  { label: "Solutions for Retail & Specialist Shops", href: "/retail-specialist-shops" },
+  { label: "Solutions for Removals & Cleaning", href: "/removals-cleaning" },
+  { label: "Solutions for MOT, Tyres & Driving Schools", href: "/mot-tyres-driving" },
+  { label: "Solutions for Estate & Letting Agents", href: "/estate-letting-agents" },
 ];
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
