@@ -13,7 +13,7 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Dental Clinics - Reputation Management for Dental Practices",
+  title: "Childcare & Education - Reputation Management for Nurseries, Tutoring Centres & Schools",
   description:
     "We protect and grow the online reputations of childcare and education providers: nurseries, tutoring centres, dance schools, music schools, and more. Remove damaging reviews, strengthen your ratings, and win more enrolments.",
 };
@@ -23,8 +23,8 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Childcare & Education providers' online reputations."
-        subtitle="Parents research extensively before choosing childcare. We remove damaging reviews, strengthen your ratings, and position your business where parents are searching, including in AI-driven search."
+        headline="We protect and grow Childcare providers' online reputations."
+        subtitle="Parents check reviews before choosing childcare. We remove damaging reviews, strengthen your ratings, and position your business where parents are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/childcare-1.png"
