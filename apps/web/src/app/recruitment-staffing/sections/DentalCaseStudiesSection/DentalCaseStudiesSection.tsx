@@ -14,10 +14,10 @@ export interface CaseStudyItem {
 const CASE_STUDIES: CaseStudyItem[] = [
   {
     quote:
-      "A private cleaning business came to us with a 3.6-star rating, several damaging fake reviews, and an online reputation that was undermining customer trust. Within just under four months, we helped remove 8 fake and policy-violating reviews, implemented a consistent customer review strategy, and increased the company’s rating to 4.7 stars. Customer bookings rose by 40%, with the company benefiting from stronger trust, better visibility, and a much healthier flow of new enquiries.",
-    avatar: { src: "/images/dental-case-study-1.png", alt: "Removals and Cleaning Business Case Study" },
-    name: "Removals and Cleaning Business Case Study",
-    title: "Reputation Recovery for a Removals and Cleaning Business in Midlands",
+      "A private dental clinic came to us with a 3.6-star rating, several damaging fake reviews, and an online reputation that was undermining patient trust. Within just under four months, we helped remove 8 fake and policy-violating reviews, implemented a consistent patient review strategy, and increased the clinic’s rating to 4.7 stars. Consultation bookings rose by 40%, with the clinic benefiting from stronger trust, better visibility, and a much healthier flow of new enquiries.",
+    avatar: { src: "/images/dental-case-study-1.png", alt: "Dental Clinic Case Study" },
+    name: "Dental Clinic Case Study",
+    title: "Reputation Recovery for a Dental Clinic in Midlands",
   },
   {
     quote:
@@ -28,10 +28,10 @@ const CASE_STUDIES: CaseStudyItem[] = [
   },
   {
     quote:
-      "A premium aesthetic company was attracting attention online, but too many potential clients were dropping off before booking. Its 4.0-star rating and mixed review profile were creating doubt at the point of decision. Reputation Experts helped reposition the business by challenging damaging reviews, building a stronger flow of genuine positive feedback, and improving the spa’s wider digital trust signals. Within four months, the rating rose to 4.8 stars and treatment enquiries and package bookings increased by 35%.",
+      "A premium aesthetic clinic was attracting attention online, but too many potential clients were dropping off before booking. Its 4.0-star rating and mixed review profile were creating doubt at the point of decision. Reputation Experts helped reposition the business by challenging damaging reviews, building a stronger flow of genuine positive feedback, and improving the spa’s wider digital trust signals. Within four months, the rating rose to 4.8 stars and treatment enquiries and package bookings increased by 35%.",
     avatar: { src: "/images/dental-case-study-3.png", alt: "Pierre Lambert" },
     name: "Pierre Lambert",
-    title: "Reputation Acceleration for an Aesthetic Company in London",
+    title: "Reputation Acceleration for an Aesthetic Clinic in London",
   },
 ];
 

@@ -13,9 +13,9 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Retail & Specialist Shops - Reputation Management for Boutiques, Florists & Pet Shops",
+  title: "Financial Services - Reputation Management for Insurance Brokers, Advisors & Investment Firms",
   description:
-    "We protect and grow the online reputations of retail and specialist shops: boutiques, florists, pet shops, electronics stores, and jewellers. Remove damaging reviews, strengthen your ratings, and win more customers.",
+    "We protect and grow the online reputations of financial services providers: insurance brokers, financial advisors, traders, investment firms, mortgage advisors, and insurance companies. Remove damaging reviews, strengthen your ratings, and win more clients.",
 };
 
 export default function Home2Page() {
@@ -23,12 +23,12 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Retail & Specialist Shop owners' online reputations."
-        subtitle="Shoppers check reviews before visiting a boutique, florist, pet shop, electronics store, or jeweller. We remove damaging reviews, strengthen your ratings, and position your shop where customers are searching, including in AI-driven search."
+        headline="We protect and grow Financial Services providers\u2019 online reputations."
+        subtitle="Clients check reviews before choosing an insurance broker, financial advisor, mortgage advisor, trader, or investment firm. We remove damaging reviews, strengthen your ratings, and position your firm where clients are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
-        imageSrc="/images/retail-1.png"
-        imageAlt="Retail specialist shop"
+        imageSrc="/images/financial-1.png"
+        imageAlt="Financial services professional"
       />
 
       {/* ── 2. Problem Statement + Platform Cards ────────────────── */}

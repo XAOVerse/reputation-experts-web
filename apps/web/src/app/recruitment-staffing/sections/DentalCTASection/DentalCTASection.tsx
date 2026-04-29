@@ -19,7 +19,7 @@ export function DentalCTASection() {
             className="text-white font-normal leading-[1.15] tracking-[-0.02em] mb-14 lg:mb-16 max-w-[560px]"
             style={{ fontSize: "clamp(2rem, 4vw, 3rem)" }}
           >
-            Let&apos;s build a reputation your business deserves.
+            Let&apos;s build a reputation your practice deserves.
           </h2>
 
           {/* ── "Write us on" ─────────────────────────────────────── */}
@@ -83,7 +83,7 @@ export function DentalCTASection() {
 
             {/* Tagline */}
             <p className="text-white/35 text-[13px] sm:ml-4 leading-snug">
-              Join cleaning businesses across the UK who trust us to protect and grow their online presence.
+              Join dental practices across the UK who trust us to protect and grow their online presence.
             </p>
           </div>
 

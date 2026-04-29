@@ -15,12 +15,12 @@ export interface DentalHeroSectionProps {
 }
 
 export function DentalHeroSection({
-  headline = "We protect and grow Cleaning Companys\u2019 online reputations.",
-  subtitle = "Improving online reputation directly affects companys by helping them gain more bookings, build trust, and increase sales.",
+  headline = "We protect and grow Dental Clinics\u2019 online reputations.",
+  subtitle = "Improving online reputation directly affects clinics by helping them gain more bookings, build trust, and increase sales.",
   ctaLabel = "Free Assessment",
   ctaLink = "/contact",
-  imageSrc = "/images/home-services-1.png",
-  imageAlt = "Cleaning service",
+  imageSrc = "/images/dental-1.png",
+  imageAlt = "Dental clinic consultation",
 }: DentalHeroSectionProps) {
   return (
     <section

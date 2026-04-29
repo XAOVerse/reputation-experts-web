@@ -13,9 +13,9 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Removals & Cleaning - Reputation Management for Removal Companies & Cleaning Services",
+  title: "Cleaning Services - Reputation Management for Deep Cleaning, Carpet & Window Cleaners",
   description:
-    "We protect and grow the online reputations of removals and cleaning businesses: removal companies, cleaning services, laundries, carpet cleaners, and pest control. Remove damaging reviews, strengthen your ratings, and win more bookings.",
+    "We protect and grow the online reputations of cleaning businesses: deep cleaning, carpet cleaning, power washing, window cleaning, and commercial office cleaning. Remove damaging reviews, strengthen your ratings, and win more bookings.",
 };
 
 export default function Home2Page() {
@@ -23,12 +23,12 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Removals & Cleaning professionals' online reputations."
-        subtitle="Customers check reviews before hiring a removal company, cleaning service, carpet cleaner, or pest control firm. We remove damaging reviews, strengthen your ratings, and position your business where customers are searching, including in AI-driven search."
+        headline="We protect and grow Cleaning Services providers' online reputations."
+        subtitle="Customers check reviews before hiring a deep cleaning company, carpet cleaner, power washing service, window cleaner, or commercial office cleaner. We remove damaging reviews, strengthen your ratings, and position your business where customers are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
-        imageSrc="/images/home-services-1.png"
-        imageAlt="Removals and cleaning service"
+        imageSrc="/images/cleaning-1.png"
+        imageAlt="Professional cleaning service"
       />
 
       {/* ── 2. Problem Statement + Platform Cards ────────────────── */}

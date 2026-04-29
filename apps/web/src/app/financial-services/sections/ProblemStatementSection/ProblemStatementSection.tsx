@@ -101,8 +101,8 @@ const DEFAULT_PLATFORMS: PlatformCard[] = [
 
 export function ProblemStatementSection({
   heading,
-  bodyLeft = "In 2026, Over 80% of customers read online reviews before hiring a deep cleaning company or cleaning service. Reputation directly drives revenue. A business with a poor online reputation loses customers to competitors every single day, even when the companyal care is identical. We close that gap by removing damaging reviews that drag your rating down and generating a consistent flow of new 5-star reviews that strengthen trust and push your rating up.",
-  bodyRight = "We also help ensure your business appears prominently when potential customers search on Google, ask ChatGPT, or browse AI Overviews. The result is more visibility, more clicks, more calls, and more booked appointments. Clients typically see a 30\u201350% increase in new customer enquiries within the first three months.",
+  bodyLeft = "In 2026, 89% of patients read online reviews before booking a dentist. Reputation directly drives revenue. A practice with a poor online reputation loses patients to competitors every single day, even when the clinical care is identical. We close that gap by removing damaging reviews that drag your rating down and generating a consistent flow of new 5-star reviews that strengthen trust and push your rating up.",
+  bodyRight = "We also help ensure your practice appears prominently when potential patients search on Google, ask ChatGPT, or browse AI Overviews. The result is more visibility, more clicks, more calls, and more booked appointments. Clients typically see a 30\u201350% increase in new patient enquiries within the first three months.",
   platforms = DEFAULT_PLATFORMS,
 }: ProblemStatementSectionProps) {
   return (
@@ -118,9 +118,9 @@ export function ProblemStatementSection({
         >
           {heading ?? (
             <>
-              For many UK cleaning businesses,{" "}
+              For many UK dental practices,{" "}
               <strong className="font-bold">
-                poor reviews mean losing £2,000 to £20,000+ per year
+                poor reviews mean losing £60,000 to £180,000+ per year
               </strong>{" "}
               in lost revenue.
             </>

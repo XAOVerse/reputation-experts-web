@@ -21,9 +21,10 @@ const SOLUTIONS: { label: string; href: string }[] = [
   { label: "Solutions for Health & Wellbeing", href: "/health-wellbeing" },
   { label: "Solutions for Fitness & Wellness", href: "/fitness-wellness" },
   { label: "Solutions for Takeaways & Food Retail", href: "/takeaways-food-retail" },
-  { label: "Solutions for Professional Services", href: "/professional-services" },
+  { label: "Solutions for Financial Services", href: "/financial-services" },
+  { label: "Solutions for Recruitment & Staffing", href: "/recruitment-staffing" },
   { label: "Solutions for Retail & Specialist Shops", href: "/retail-specialist-shops" },
-  { label: "Solutions for Removals & Cleaning", href: "/removals-cleaning" },
+  { label: "Solutions for Cleaning Services", href: "/removals-cleaning" },
   { label: "Solutions for MOT, Tyres & Driving Schools", href: "/mot-tyres-driving" },
   { label: "Solutions for Estate & Letting Agents", href: "/estate-letting-agents" },
 ];

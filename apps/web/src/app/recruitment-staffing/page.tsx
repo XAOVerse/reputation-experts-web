@@ -13,9 +13,9 @@ import { DentalCTASection } from "./sections/DentalCTASection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Retail & Specialist Shops - Reputation Management for Boutiques, Florists & Pet Shops",
+  title: "Recruitment & Staffing - Reputation Management for NHS Agencies, Staff Agencies & Recruiters",
   description:
-    "We protect and grow the online reputations of retail and specialist shops: boutiques, florists, pet shops, electronics stores, and jewellers. Remove damaging reviews, strengthen your ratings, and win more customers.",
+    "We protect and grow the online reputations of recruitment and staffing agencies: NHS agencies, staff agencies, temporary staffing firms, construction staffing, and replacement staff providers. Remove damaging reviews, strengthen your ratings, and win more placements.",
 };
 
 export default function Home2Page() {
@@ -23,12 +23,12 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Retail & Specialist Shop owners' online reputations."
-        subtitle="Shoppers check reviews before visiting a boutique, florist, pet shop, electronics store, or jeweller. We remove damaging reviews, strengthen your ratings, and position your shop where customers are searching, including in AI-driven search."
+        headline="We protect and grow Recruitment & Staffing agencies\u2019 online reputations."
+        subtitle="Employers and workers check reviews before choosing an NHS agency, staff agency, temporary staffing firm, or construction staffing provider. We remove damaging reviews, strengthen your ratings, and position your agency where clients are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
-        imageSrc="/images/retail-1.png"
-        imageAlt="Retail specialist shop"
+        imageSrc="/images/recruitment-1.png"
+        imageAlt="Recruitment and staffing agency"
       />
 
       {/* ── 2. Problem Statement + Platform Cards ────────────────── */}
