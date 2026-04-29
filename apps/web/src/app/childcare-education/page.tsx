@@ -23,8 +23,8 @@ export default function Home2Page() {
     <main>
       {/* ── 1. Hero ──────────────────────────────────────────────── */}
       <DentalHeroSection
-        headline="We protect and grow Childcare professionals' online reputations."
-        subtitle="Parents check reviews before choosing childcare. We remove damaging reviews, strengthen your ratings, and position your business where parents are searching, including in AI-driven search."
+        headline="We protect and grow Childcare providers' online reputations."
+        subtitle="Parents check reviews before choosing a nursery, tutoring centre, dance school, or music school. We remove damaging reviews, strengthen your ratings, and position your business where parents are searching, including in AI-driven search."
         ctaLabel="Free Assessment"
         ctaLink="/contact"
         imageSrc="/images/childcare-1.png"
