@@ -20,19 +20,19 @@ export interface WhoWeServeSectionProps {
 
 const DEFAULT_CARDS: ServeCard[] = [
   {
-    title: "For Individuals & Executives",
-    image: { src: "/images/card-executives.png", alt: "Professional executives" },
-    href: "/services",
+    title: "Solutions for Individuals and Executives",
+    image: { src: "/images/card-executives.png", alt: "Two business executives in conversation" },
+    href: "/contact",
   },
   {
-    title: "For Small & Medium Businesses",
-    image: { src: "/images/card-smb.png", alt: "Growing business" },
-    href: "/services",
+    title: "Solutions for Small and Medium Businesses",
+    image: { src: "/images/card-smb.png", alt: "Commercial service vehicle" },
+    href: "/contact",
   },
   {
-    title: "For Enterprise & Corporations",
-    image: { src: "/images/card-enterprise.png", alt: "Enterprise office" },
-    href: "/services",
+    title: "Solutions for Large Companies",
+    image: { src: "/images/card-enterprise.png", alt: "Large open plan office" },
+    href: "/contact",
   },
 ];
 
@@ -43,8 +43,8 @@ export function WhoWeServeSection({
   cards = DEFAULT_CARDS,
 }: WhoWeServeSectionProps) {
   return (
-    <section className="who-we-serve bg-[#f2f2f2] py-14 lg:py-20">
-      <div className="who-we-serve__inner max-w-[1200px] mx-auto px-5 lg:px-8">
+    <section className="who-we-serve bg-white py-14 lg:py-20">
+      <div className="who-we-serve__inner max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
         {/* Header row */}
         <div className="who-we-serve__header flex items-center justify-between mb-10">
           <h2 className="who-we-serve__heading text-[#0f0f0f] font-semibold text-[clamp(1.75rem,3.2vw,2.5rem)] tracking-[-0.01em]">
@@ -71,7 +71,7 @@ export function WhoWeServeSection({
                 src={card.image.src}
                 alt={card.image.alt ?? card.title}
                 fill
-                className="who-we-serve__card-image object-cover transition-transform duration-500 group-hover:scale-105"
+                className="who-we-serve__card-image object-cover grayscale transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, 33vw"
               />
               {/* Dark overlay — gradient so top text and bottom text both readable */}
