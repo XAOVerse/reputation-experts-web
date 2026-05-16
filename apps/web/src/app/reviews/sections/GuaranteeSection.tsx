@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 const POINTS = [
   {
@@ -27,47 +26,39 @@ export function GuaranteeSection() {
       aria-label="90-day guarantee"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
-        <p className="text-[#e8503a] text-[12px] tracking-[0.22em] uppercase font-semibold mb-5">
+        {/* Header — full width */}
+        <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-5">
           90-day guarantee
         </p>
         <h2
-          className="text-[#0f0f0f] font-medium leading-[1.1] tracking-[-0.02em] mb-6 max-w-[1000px]"
+          className="text-[#0f0f0f] font-medium leading-[1.1] tracking-[-0.02em] mb-6"
           style={{ fontSize: "clamp(1.875rem, 3.6vw, 2.75rem)" }}
         >
           We commit to a target score in writing. Miss it, and we work for free
           until it is reached.
         </h2>
-        <p className="text-[#444] text-[16px] lg:text-[17px] leading-[1.65] max-w-[820px] mb-10 lg:mb-12">
+        <p className="text-[#555] text-[15px] sm:text-[16px] leading-[1.7] mb-10 lg:mb-14">
           Every other reputation agency sells effort. We sell outcomes. The
           score we agree on day one is the score we have to deliver by day 90,
           or the work continues at no extra cost until we do.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6 mb-10">
+        {/* 3 steps — editorial style (thin top divider, no boxes, no divider lines) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {POINTS.map((p) => (
-            <div
-              key={p.n}
-              className="bg-white rounded-2xl border border-[#eee] shadow-[0_4px_24px_rgba(0,0,0,0.04)] p-6 lg:p-7"
-            >
-              <p className="text-[#e8503a] text-[12px] tracking-[0.22em] uppercase font-semibold mb-3">
+            <div key={p.n} className="border-t border-[#e5e5e5] pt-6">
+              <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-3">
                 Step {p.n}
               </p>
-              <h3 className="text-[#1a1a1a] text-[17px] lg:text-[18px] font-semibold leading-[1.3] mb-3 pb-3 border-b border-[#e0e0e0]">
+              <h3 className="text-[#1a1a1a] text-[18px] sm:text-[20px] font-medium leading-[1.3] tracking-[-0.01em] mb-3">
                 {p.title}
               </h3>
-              <p className="text-[#555] text-[14.5px] leading-[1.6]">
+              <p className="text-[#555] text-[14.5px] sm:text-[15px] leading-[1.7]">
                 {p.body}
               </p>
             </div>
           ))}
         </div>
-
-        <Link
-          href="/contact"
-          className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
-        >
-          Talk To Expert
-        </Link>
       </div>
     </section>
   );
