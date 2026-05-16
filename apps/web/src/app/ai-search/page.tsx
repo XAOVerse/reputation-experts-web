@@ -51,7 +51,7 @@ export default function AISearchPage() {
       <FeatureSplitSection
         eyebrow="Accuracy"
         heading="Fix how AI engines describe your business across every location."
-        body="Track how accurately each AI engine presents your business information, in every language and at every location. When ChatGPT names the wrong service area or Gemini misses your Russian-speaking clinicians, you see it the day it happens, and an agent corrects the underlying source the AI is reading from."
+        body="Track how accurately each AI engine presents your business information, in every language and at every location. When ChatGPT names the wrong service area or Gemini misses your branch's late-night opening hours, you see it the day it happens, and an agent corrects the underlying source the AI is reading from."
         illustration={<AccuracyIllustration />}
       />
       <FeatureSplitSection

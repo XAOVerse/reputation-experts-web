@@ -34,10 +34,10 @@ export function DentalCTASection() {
               </span>
               <p>
                 <a
-                  href="mailto:info@reputationexperts.ae"
+                  href="mailto:uk@reputation-experts.co.uk"
                   className="text-white text-[16px] sm:text-[17px] font-normal hover:text-white/70 transition-colors"
                 >
-                  info@reputationexperts.ae
+                  uk@reputation-experts.co.uk
                 </a>
               </p>
             </div>
@@ -49,10 +49,10 @@ export function DentalCTASection() {
               </span>
               <p>
                 <a
-                  href="mailto:info@reputationexperts.ae"
+                  href="mailto:info@reputation-experts.co.uk"
                   className="text-white text-[16px] sm:text-[17px] font-normal hover:text-white/70 transition-colors"
                 >
-                  info@reputationexperts.ae
+                  info@reputation-experts.co.uk
                 </a>
               </p>
             </div>

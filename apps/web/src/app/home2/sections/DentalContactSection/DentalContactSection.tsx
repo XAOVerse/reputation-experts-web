@@ -156,10 +156,10 @@ export function DentalContactSection() {
                 {/* Google Maps / Trustpilot Link */}
                 <div>
                   <label className="block text-[#0f0f0f] text-[14px] font-medium mb-1.5">
-                    Google Maps / Trustpilot Link
+                    Google Maps / Trustpilot Link <span className="text-[#999] text-[12px] font-normal">(optional)</span>
                   </label>
                   <textarea
-                    placeholder="Something about your great idea"
+                    placeholder="Paste a link if you have one — skip if not"
                     rows={1}
                     value={form.link}
                     maxLength={500}
