@@ -14,11 +14,11 @@ export interface MainHeroSectionProps {
 }
 
 export function MainHeroSection({
-  headline = "We Protect, Repair, and Grow Dubai Businesses Online Reputations.",
+  headline = "We Protect, Repair, and Grow UK Businesses' Online Reputations.",
   ctaLabel = "Free Assessment",
   ctaLink = "/contact",
   imageSrc = "/images/home-new.png",
-  imageAlt = "Dubai business online reputation management",
+  imageAlt = "UK business online reputation management",
 }: MainHeroSectionProps) {
   return (
     <section
@@ -68,7 +68,7 @@ export function MainHeroSection({
                   We Protect, Repair,{" "}
                   <span style={{ fontWeight: 300 }}>and </span>
                   <strong style={{ fontWeight: 700 }}>
-                    Grow Dubai Businesses Online Reputations.
+                    Grow UK Businesses' Online Reputations.
                   </strong>
                 </h1>
 

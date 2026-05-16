@@ -25,7 +25,7 @@ export function SearchEvolvedSection() {
                 className="text-[#0f0f0f] font-medium leading-[1.05] tracking-[-0.03em] mb-3"
                 style={{ fontSize: "clamp(2.25rem, 5vw, 3.5rem)" }}
               >
-                Roughly half of Dubai consumers
+                Roughly half of UK consumers
               </p>
               <p className="text-[#444] text-[18px] leading-[1.55] text-justify lg:text-left">
                 now use AI-powered search at least once a week when deciding
@@ -41,7 +41,7 @@ export function SearchEvolvedSection() {
                     Customer
                   </p>
                   <p className="text-[14px] text-[#202124] leading-[1.5]">
-                    Which is the best aesthetic clinic near Marina with Arabic and Russian speaking doctors?
+                    Which is the best aesthetic clinic in Mayfair with bilingual French and Mandarin speaking doctors?
                   </p>
                 </div>
                 <div className="bg-[#0f0f0f] text-white rounded-2xl rounded-br-md px-4 py-3 max-w-[85%] shadow-sm ml-auto">
@@ -49,7 +49,7 @@ export function SearchEvolvedSection() {
                     AI
                   </p>
                   <p className="text-[14px] leading-[1.5]">
-                    Three clinics in Marina match your criteria. The most highly rated, with multilingual care confirmed across reviews, is…
+                    Three clinics in Mayfair match your criteria. The most highly rated, with multilingual care confirmed across reviews, is…
                   </p>
                 </div>
               </div>

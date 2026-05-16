@@ -45,7 +45,7 @@ export function CapabilitiesGridSection() {
           className="text-center text-[#0f0f0f] font-medium leading-[1.15] tracking-[-0.02em] mb-12 lg:mb-16 max-w-[1100px] mx-auto"
           style={{ fontSize: "clamp(1.75rem, 3.6vw, 2.75rem)" }}
         >
-          The tools Dubai brands need to dominate AI search and reach more customers.
+          The tools UK brands need to dominate AI search and reach more customers.
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">

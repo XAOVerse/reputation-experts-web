@@ -14,24 +14,24 @@ export interface CaseStudyItem {
 const CASE_STUDIES: CaseStudyItem[] = [
   {
     quote:
-      "New aesthetics clinic in Jumeirah, suffered from low review count - no trust signals. Managed to build strong reputation bringing the overall score to over 4.9",
+      "New aesthetics clinic in Mayfair, suffered from low review count - no trust signals. Managed to build strong reputation bringing the overall score to over 4.9",
     avatar: { src: "/images/asthetic-clinic.png", alt: "Aesthetics Clinic" },
     name: "Aesthetics Clinic",
-    title: "Jumeirah, Dubai",
+    title: "Mayfair, London",
   },
   {
     quote:
-      "Car Rental Office in Business Bay struggled to get online booking with 3.4 score, increased the score to 4.7 in 4 months, online bookings doubled.",
+      "Car rental office in Mayfair struggled to get online booking with 3.4 score, increased the score to 4.7 in 4 months, online bookings doubled.",
     avatar: { src: "/images/luxury-car.png", alt: "Luxury Car Rental Company" },
     name: "Luxury Car Rental Company",
-    title: "Business Bay, Dubai",
+    title: "Mayfair, London",
   },
   {
     quote:
-      "Pool fit-out contractor tripled revenue after 5 months working with us, now recommended by Google AI Overview and ChatGPT for swimming pool contractor in Dubai.",
+      "Pool fit-out contractor tripled revenue after 5 months working with us, now recommended by Google AI Overview and ChatGPT for swimming pool contractor in London.",
     avatar: { src: "/images/swiming-pool.png", alt: "Swimming Pool Contractor" },
     name: "Swimming Pool Contractor",
-    title: "Dubai Investment Park, Dubai",
+    title: "Park Royal, London",
   },
 ];
 

@@ -21,7 +21,7 @@ const PILLARS = [
   {
     number: "04",
     title: "Entity authority, everywhere",
-    body: "Whether it is expert bios or hyperlocal content, we ensure your brand is positioned as a reliable answer in both local Dubai and broader international AI interactions.",
+    body: "Whether it is expert bios or hyperlocal content, we ensure your brand is positioned as a reliable answer in both local UK and broader international AI interactions.",
   },
   {
     number: "05",

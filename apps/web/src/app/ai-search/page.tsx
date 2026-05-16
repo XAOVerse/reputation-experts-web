@@ -20,9 +20,9 @@ import { IndustriesSection } from "./sections/IndustriesSection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Search AI for Dubai Brands | Be the #1 Answer on Google AI Overview, ChatGPT, Perplexity & Gemini | Reputation Experts",
+  title: "Search AI for UK Brands | Be the #1 Answer on Google AI Overview, ChatGPT, Perplexity & Gemini | Reputation Experts",
   description:
-    "AI agents that track and lift your visibility across Google AI Overview, ChatGPT, Perplexity and Gemini, in every language your customers search in. Built for Dubai multi-location brands across hospitality, healthcare, real estate, automotive and professional services. Backed by a 90-day money-back guarantee.",
+    "AI agents that track and lift your visibility across Google AI Overview, ChatGPT, Perplexity and Gemini. Built for UK multi-location brands across hospitality, healthcare, real estate, automotive and professional services. Backed by a 90-day money-back guarantee.",
 };
 
 export default function AISearchPage() {
@@ -44,7 +44,7 @@ export default function AISearchPage() {
       <FeatureSplitSection
         eyebrow="Citations"
         heading="See which websites shape your visibility on ChatGPT and beyond."
-        body="Find the top sites, listings and publications that ChatGPT, Gemini, Perplexity and Google AI Overview pull from when answering Dubai queries in your category. Use that map to guide where to earn placements, where to update existing coverage, and where to leave silent."
+        body="Find the top sites, listings and publications that ChatGPT, Gemini, Perplexity and Google AI Overview pull from when answering UK queries in your category. Use that map to guide where to earn placements, where to update existing coverage, and where to leave silent."
         illustration={<CitationsIllustration />}
         reverse
       />

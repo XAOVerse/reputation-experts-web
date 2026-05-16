@@ -8,7 +8,7 @@ export function VisibilityIllustration() {
     <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
       <img
         src="/images/visibility-view.png"
-        alt="AI visibility share view: your brand vs Dubai competitors across Google AI Overview, ChatGPT, Perplexity and Gemini."
+        alt="AI visibility share view: your brand vs UK competitors across Google AI Overview, ChatGPT, Perplexity and Gemini."
         width={1639}
         height={959}
         className="w-full h-auto rounded-2xl"
@@ -24,7 +24,7 @@ export function CitationsIllustration() {
     <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
       <img
         src="/images/citations-view.png"
-        alt="Citations view: the top sites and publications shaping AI answers about Dubai businesses, with citation counts and which sources currently feature the brand."
+        alt="Citations view: the top sites and publications shaping AI answers about UK businesses, with citation counts and which sources currently feature the brand."
         width={1548}
         height={1016}
         className="w-full h-auto rounded-2xl"
@@ -34,13 +34,13 @@ export function CitationsIllustration() {
   );
 }
 
-/* Accuracy — image asset of how AI engines currently describe a Dubai business */
+/* Accuracy — image asset of how AI engines currently describe a UK business */
 export function AccuracyIllustration() {
   return (
     <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
       <img
         src="/images/accuracy-ai-overview.png"
-        alt="Profile accuracy view: how AI engines currently describe a Dubai business across fields such as business name, categories, opening hours, phone number, languages served and service area."
+        alt="Profile accuracy view: how AI engines currently describe a UK business across fields such as business name, categories, opening hours, phone number, languages served and service area."
         width={1627}
         height={967}
         className="w-full h-auto rounded-2xl"
@@ -56,7 +56,7 @@ export function SentimentIllustration() {
     <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
       <img
         src="/images/sentiment-swot.png"
-        alt="SWOT view of how AI describes a Dubai Marina business across strengths, weaknesses, opportunities and threats."
+        alt="SWOT view of how AI describes a central London business across strengths, weaknesses, opportunities and threats."
         width={1504}
         height={976}
         className="w-full h-auto rounded-2xl"
@@ -69,7 +69,7 @@ export function SentimentIllustration() {
 /* AI agents — workflow with three steps */
 export function AIAgentsIllustration() {
   const steps = [
-    { title: "Listings refresh", body: "Agents push Arabic + English copy to Google Business Profile, Apple Business Connect and Bing Places." },
+    { title: "Listings refresh", body: "Agents push fresh listings copy to Google Business Profile, Apple Business Connect and Bing Places." },
     { title: "Review generation", body: "Agents send multilingual review requests timed to checkout, treatment completion or project handover." },
     { title: "Content updates", body: "Agents publish location-specific FAQs and service pages that AI engines cite." },
   ];

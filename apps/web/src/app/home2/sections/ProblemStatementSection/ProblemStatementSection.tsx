@@ -118,7 +118,7 @@ export function ProblemStatementSection({
         >
           {heading ?? (
             <>
-              For many UAE dental practices,{" "}
+              For many UK dental practices,{" "}
               <strong className="font-bold">
                 poor reviews mean losing £60,000 to £180,000+ per year
               </strong>{" "}

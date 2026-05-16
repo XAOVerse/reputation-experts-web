@@ -30,7 +30,7 @@ export function StatBannerSection() {
           <div className="lg:order-1">
             <img
               src="/images/outcome-chart.png"
-              alt="Search AI outcome chart: AI overview accuracy lift over a 12-week period across Google AI Overview, ChatGPT, Gemini and Perplexity for Dubai multi-location brands."
+              alt="Search AI outcome chart: AI overview accuracy lift over a 12-week period across Google AI Overview, ChatGPT, Gemini and Perplexity for UK multi-location brands."
               width={1625}
               height={968}
               className="w-full h-auto block"
