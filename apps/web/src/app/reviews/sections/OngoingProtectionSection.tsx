@@ -28,19 +28,23 @@ export function OngoingProtectionSection() {
       aria-label="Ongoing protection"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
-        {/* Top row — narrow heading (left) + wide raw image (right) */}
+        {/* Top row — narrow heading + intro (left) + wide raw image (right) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-          {/* Heading column — narrow */}
+          {/* Heading column — narrow, now includes intro */}
           <div className="lg:col-span-3">
             <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-5">
               Always-on protection
             </p>
             <h2
-              className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em]"
+              className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em] mb-5"
               style={{ fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)" }}
             >
               Harmful content gone the moment it appears.
             </h2>
+            <p className="text-[#555] text-[15px] leading-[1.7]">
+              What is removable, we remove. What is not, we suppress. Either way
+              the content stops costing you customers.
+            </p>
           </div>
 
           {/* Image column — wide, raw image (no card) */}
@@ -55,25 +59,18 @@ export function OngoingProtectionSection() {
           </div>
         </div>
 
-        {/* Intro + 4 outcomes in 2-col grid */}
-        <div className="mt-10 lg:mt-14">
-          <p className="text-[#555] text-[15px] leading-[1.7] max-w-[820px] mb-8 lg:mb-10">
-            What is removable, we remove. What is not, we suppress. Either way
-            the content stops costing you customers.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-14 lg:gap-y-10">
-            {OUTCOMES.map((o) => (
-              <div key={o.title}>
-                <h3 className="text-[#1a1a1a] text-[16px] sm:text-[17px] font-semibold leading-[1.3] mb-3">
-                  {o.title}
-                </h3>
-                <p className="text-[#555] text-[14.5px] leading-[1.7]">
-                  {o.body}
-                </p>
-              </div>
-            ))}
-          </div>
+        {/* 4 outcomes in 2-col grid below */}
+        <div className="mt-10 lg:mt-14 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-14 lg:gap-y-10">
+          {OUTCOMES.map((o) => (
+            <div key={o.title}>
+              <h3 className="text-[#1a1a1a] text-[16px] sm:text-[17px] font-semibold leading-[1.3] mb-3">
+                {o.title}
+              </h3>
+              <p className="text-[#555] text-[14.5px] leading-[1.7]">
+                {o.body}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
