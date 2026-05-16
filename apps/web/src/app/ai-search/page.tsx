@@ -16,7 +16,6 @@ import { LeadershipOpportunitySection } from "./sections/LeadershipOpportunitySe
 import { ZeroClickOutcomesSection } from "./sections/ZeroClickOutcomesSection";
 import { PlatformsMediaSection } from "./sections/PlatformsMediaSection";
 import { FAQSection } from "./sections/FAQSection";
-import { AISearchCTASection } from "./sections/AISearchCTASection";
 import { IndustriesSection } from "./sections/IndustriesSection";
 import { DentalContactSection } from "./sections/DentalContactSection";
 
@@ -73,7 +72,6 @@ export default function AISearchPage() {
       <PlatformsMediaSection />
       <FAQSection />
       <IndustriesSection />
-      <AISearchCTASection />
       <DentalContactSection />
     </main>
   );

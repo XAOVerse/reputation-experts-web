@@ -195,7 +195,7 @@ export function Header({
             {/* Talk To Expert — orange filled pill (mailto CTA) */}
             <a
               href="mailto:info@reputation-experts.co.uk"
-              className="header__cta-expert inline-flex items-center whitespace-nowrap rounded-full bg-[#FF461E] text-white text-[14px] font-medium px-5 py-2.5 hover:bg-[#e63b15] transition-colors"
+              className="header__cta-expert inline-flex items-center whitespace-nowrap rounded-full bg-[#FF461E] text-white text-[12px] sm:text-[13px] font-medium px-3.5 sm:px-5 py-[7px] hover:bg-[#e63b15] transition-colors"
             >
               Talk To Expert
             </a>
@@ -203,7 +203,7 @@ export function Header({
             {/* Phone number — black filled pill */}
             <a
               href="tel:08006546009"
-              className="header__cta-phone hidden sm:inline-flex items-center whitespace-nowrap rounded-full bg-[#1a1a1a] text-white text-[14px] font-medium px-5 py-2.5 hover:bg-[#333] transition-colors"
+              className="header__cta-phone hidden sm:inline-flex items-center whitespace-nowrap rounded-full bg-[#1a1a1a] text-white text-[12px] sm:text-[13px] font-semibold px-3.5 sm:px-5 py-[7px] hover:bg-[#333] transition-colors"
             >
               0800 654 6009
             </a>
