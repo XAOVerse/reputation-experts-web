@@ -30,8 +30,8 @@ export default function ReviewsPage() {
       <ReviewGrowthSection />
       <OngoingProtectionSection />
       <GuaranteeSection />
-      <ReviewsFAQSection />
       <IndustriesSection />
+      <ReviewsFAQSection />
       <DentalCTASection />
       <DentalContactSection />
     </main>
