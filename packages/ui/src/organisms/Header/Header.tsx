@@ -162,12 +162,12 @@ export function Header({
                   onMouseEnter={handleSolutionsEnter}
                   onMouseLeave={handleSolutionsLeave}
                 >
-                  <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-[#f0f0f0] py-3 min-w-[320px]">
+                  <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.12)] border border-[#f0f0f0] py-2 min-w-[320px]">
                     {SOLUTIONS.map((sol) => (
                       <Link
                         key={sol.href}
                         href={sol.href}
-                        className="block px-5 py-2.5 text-[13.5px] text-[#1a1a1a] font-medium hover:bg-[#f7f7f7] hover:text-[#555] transition-colors whitespace-nowrap"
+                        className="block px-5 py-1 text-[13.5px] leading-snug text-[#1a1a1a] font-medium hover:bg-[#f7f7f7] hover:text-[#555] transition-colors whitespace-nowrap"
                         onClick={() => setDesktopSolutionsOpen(false)}
                       >
                         {sol.label}
