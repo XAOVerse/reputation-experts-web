@@ -8,6 +8,7 @@ import { ReviewGrowthSection } from "./sections/ReviewGrowthSection";
 import { OngoingProtectionSection } from "./sections/OngoingProtectionSection";
 import { GuaranteeSection } from "./sections/GuaranteeSection";
 import { ReviewsFAQSection } from "./sections/ReviewsFAQSection";
+import { IndustriesSection } from "./sections/IndustriesSection";
 import { DentalCTASection } from "../home2/sections/DentalCTASection";
 import { DentalContactSection } from "../home2/sections/DentalContactSection";
 
@@ -30,6 +31,7 @@ export default function ReviewsPage() {
       <OngoingProtectionSection />
       <GuaranteeSection />
       <ReviewsFAQSection />
+      <IndustriesSection />
       <DentalCTASection />
       <DentalContactSection />
     </main>
