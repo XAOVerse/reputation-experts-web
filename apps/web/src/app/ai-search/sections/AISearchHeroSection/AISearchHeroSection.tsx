@@ -95,14 +95,16 @@ export function AISearchHeroSection() {
 
           {/* Right: hero image */}
           <div className="lg:col-span-7">
-            <Image
-              src="/images/ai-search-hero.png"
-              alt="ChatGPT visibility dashboard showing dental clinic recommendations and brand visibility rankings"
-              width={1400}
-              height={900}
-              priority
-              className="w-full h-auto rounded-3xl"
-            />
+            <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
+              <Image
+                src="/images/ai-search-hero.png"
+                alt="ChatGPT visibility dashboard showing dental clinic recommendations and brand visibility rankings"
+                width={1400}
+                height={900}
+                priority
+                className="w-full h-auto rounded-2xl"
+              />
+            </div>
           </div>
         </div>
       </div>
