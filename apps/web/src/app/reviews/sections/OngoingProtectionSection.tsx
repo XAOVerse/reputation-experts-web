@@ -1,22 +1,22 @@
 import React from "react";
 import Image from "next/image";
 
-const ACTIONS = [
+const OUTCOMES = [
   {
-    title: "Dispute & remove policy-violating reviews",
-    body: "We file removal requests for reviews that breach Google, Trustpilot, Tripadvisor and Yelp policy, fake, off-topic, conflict-of-interest, harassment, hate speech. If the platform reinstates a removed review, we re-file on the new ground.",
+    title: "Harmful reviews removed",
+    body: "We remove harmful reviews from Google, Trustpilot, Tripadvisor, Yelp and every major platform. The ones that cannot be taken down outright are suppressed beneath a steady flow of authentic positive reviews so they stop influencing buyers.",
   },
   {
-    title: "Defamation & impersonation takedowns",
-    body: "For reviews and posts that cross the line into defamation or impersonate your business, we coordinate the formal takedown notices the platform requires and, where appropriate, the cease-and-desist your solicitor needs to act on.",
+    title: "Defamation and impersonation handled",
+    body: "False claims, defamatory posts, fake accounts and impersonation of your brand are taken down at source. Your name is protected on every channel your customers and prospects look at.",
   },
   {
-    title: "Image and copyright protection",
-    body: "If a competitor or scraper site is using your photos, branding or treatment results without permission, we file the DMCA and Google copyright notices that get the assets removed at source.",
+    title: "Stolen images and content recovered",
+    body: "Photos, branding, treatment results, copy, anything of yours that a competitor or scraper site is using without permission is removed. The asset goes away, and the site loses the credibility it borrowed from you.",
   },
   {
-    title: "24/7 monitoring & re-disputes",
-    body: "Harmful content rarely stops at one post. Our monitors flag every new review and mention as it appears so the dispute is filed before it has time to influence prospective customers, and re-filed every time it reappears.",
+    title: "Always watching, always acting",
+    body: "Reputation damage happens in the hours between when something bad goes live and when anyone on your team notices. Our team is monitoring 24/7 so the work starts the moment the content appears, and continues every time it tries to reappear.",
   },
 ];
 
@@ -39,8 +39,7 @@ export function OngoingProtectionSection() {
               className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em]"
               style={{ fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)" }}
             >
-              We dispute, remove and re-dispute harmful content the moment it
-              appears.
+              Harmful content gone the moment it appears.
             </h2>
           </div>
 
@@ -48,7 +47,7 @@ export function OngoingProtectionSection() {
           <div className="lg:col-span-9">
             <Image
               src="/images/reviews/reporting-agent-2.png"
-              alt="Always-on review monitoring dashboard showing flagged reviews, dispute status, and removal outcomes per location."
+              alt="Always-on reputation monitoring dashboard tracking new mentions, flagged content and removal outcomes across locations."
               width={1800}
               height={755}
               className="w-full h-auto"
@@ -56,22 +55,21 @@ export function OngoingProtectionSection() {
           </div>
         </div>
 
-        {/* Intro paragraph + 4 actions in 2-col grid */}
+        {/* Intro + 4 outcomes in 2-col grid */}
         <div className="mt-10 lg:mt-14">
           <p className="text-[#555] text-[15px] leading-[1.7] max-w-[820px] mb-8 lg:mb-10">
-            Most reputation damage is done in the days between when a harmful
-            review goes live and when anyone on your team notices. We close
-            that window.
+            What is removable, we remove. What is not, we suppress. Either way
+            the content stops costing you customers.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-14 lg:gap-y-10">
-            {ACTIONS.map((a) => (
-              <div key={a.title}>
+            {OUTCOMES.map((o) => (
+              <div key={o.title}>
                 <h3 className="text-[#1a1a1a] text-[16px] sm:text-[17px] font-semibold leading-[1.3] mb-3">
-                  {a.title}
+                  {o.title}
                 </h3>
                 <p className="text-[#555] text-[14.5px] leading-[1.7]">
-                  {a.body}
+                  {o.body}
                 </p>
               </div>
             ))}
