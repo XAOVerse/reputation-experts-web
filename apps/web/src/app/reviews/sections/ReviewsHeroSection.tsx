@@ -31,7 +31,7 @@ export function ReviewsHeroSection() {
           width={2950}
           height={1185}
           priority
-          className="w-full h-auto"
+          className="w-full h-auto rounded-3xl"
         />
       </div>
     </section>
