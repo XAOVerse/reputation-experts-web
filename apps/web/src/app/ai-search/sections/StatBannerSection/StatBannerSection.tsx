@@ -28,14 +28,16 @@ export function StatBannerSection() {
 
           {/* Chart (after text on mobile; left column on desktop via order) */}
           <div className="lg:order-1">
-            <img
-              src="/images/outcome-chart.png"
-              alt="Search AI outcome chart: AI overview accuracy lift over a 12-week period across Google AI Overview, ChatGPT, Gemini and Perplexity for UK multi-location brands."
-              width={1625}
-              height={968}
-              className="w-full h-auto block"
-              loading="lazy"
-            />
+            <div className="bg-white rounded-3xl border border-[#eee] shadow-[0_8px_40px_rgba(0,0,0,0.05)] p-4 sm:p-6 lg:p-8">
+              <img
+                src="/images/outcome-chart.png"
+                alt="Search AI outcome chart: AI overview accuracy lift over a 12-week period across Google AI Overview, ChatGPT, Gemini and Perplexity for UK multi-location brands."
+                width={1625}
+                height={968}
+                className="w-full h-auto block rounded-2xl"
+                loading="lazy"
+              />
+            </div>
           </div>
         </div>
       </div>
