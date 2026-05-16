@@ -63,7 +63,7 @@ export function OngoingProtectionSection() {
         <div className="mt-10 lg:mt-14 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-14 lg:gap-y-10">
           {OUTCOMES.map((o) => (
             <div key={o.title}>
-              <h3 className="text-[#1a1a1a] text-[16px] sm:text-[17px] font-semibold leading-[1.3] mb-3">
+              <h3 className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-3">
                 {o.title}
               </h3>
               <p className="text-[#555] text-[14.5px] leading-[1.7]">
