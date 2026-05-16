@@ -54,7 +54,7 @@ export function OngoingProtectionSection() {
               alt="Always-on reputation monitoring dashboard tracking new mentions, flagged content and removal outcomes across locations."
               width={1800}
               height={755}
-              className="w-full h-auto"
+              className="w-full h-auto rounded-3xl"
             />
           </div>
         </div>
