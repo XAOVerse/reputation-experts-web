@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 export function ListingOptimisationSection() {
   return (
@@ -38,18 +37,8 @@ export function ListingOptimisationSection() {
           </div>
         </div>
 
-        {/* Free Assessment CTA */}
-        <div className="mt-8 lg:mt-10">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
-          >
-            Free Assessment
-          </Link>
-        </div>
-
         {/* Two-column body text */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 mt-8 lg:mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 mt-10 lg:mt-14">
           <p className="text-[#555] text-[15px] leading-[1.7]">
             We audit your Google Business Profile, Apple Business Connect, Bing
             Places and the long tail of category-specific listings, roughly 200
