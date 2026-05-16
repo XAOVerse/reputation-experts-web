@@ -1,71 +1,72 @@
-import {
-  HeroSection,
-  WhoWeServeSection,
-  ServicesSection,
-  KeyBenefitsSection,
-  TestimonialsSection,
-  AwardsStrip,
-  ProcessSection,
-  PrivacySection,
-  FAQSection,
-  CTASection,
-} from "@repute/ui";
 import type { Metadata } from "next";
+import { MainHeroSection } from "./home2/sections/MainHeroSection";
+import { TrustStripSection } from "./home2/sections/TrustStripSection";
+import { OnlineReputationExpertsSection } from "./home2/sections/OnlineReputationExpertsSection";
+import { IndustriesSection } from "./home2/sections/IndustriesSection";
+import { DentalServicesSection } from "./home2/sections/DentalServicesSection";
+import { PlatformsAndAISection } from "./home2/sections/PlatformsAndAISection";
+import { WhoWeServeSection } from "../../../../packages/ui/src/sections/WhoWeServeSection";
+import { KeyBenefitsSection } from "../../../../packages/ui/src/sections/KeyBenefitsSection";
+import { PartnersSection } from "./home2/sections/PartnersSection/PartnersSection";
+import { PlatformsMediaSection } from "./home2/sections/PlatformsMediaSection";
+import { DentalCaseStudiesSection } from "./home2/sections/DentalCaseStudiesSection";
+import { DentalFAQSection } from "./home2/sections/DentalFAQSection";
+import { InsightsSection } from "./home2/sections/InsightsSection/InsightsSection";
+import { DentalCTASection } from "./home2/sections/DentalCTASection";
+import { DentalContactSection } from "./home2/sections/DentalContactSection";
 
 export const metadata: Metadata = {
-  title: "Reputation Experts — Online Reputation Management",
+  title: "Reputation Experts — Protect & Grow Your Online Reputation",
   description:
-    "Reputation Experts helps individuals and businesses take control of their online presence. Professional reputation management, monitoring, and digital strategy across all major platforms.",
+    "We protect and grow your online reputation. Remove harmful reviews, build trust, and increase revenue with professional reputation management.",
 };
 
 export default function HomePage() {
   return (
     <main>
-      {/* 1. Hero */}
-      <HeroSection
-        headline="Take Control of Your Online Reputation"
-        highlightWord=""
-        quote="We help individuals and businesses manage, protect, and improve how they appear online — across search results, review platforms, and social media."
-        quoteBold="Expert guidance. Confidential process."
-        subQuote="Your online reputation shapes first impressions. Whether you're addressing unwanted content or building a stronger digital presence, we can help."
-        ctaLabel="Free Consultation"
-        ctaLink="/contact"
-        mediaCaption="Reputation Experts — Professional Online Reputation Management"
-mediaSrc="/images/hero-laptop.jpg"      />
+      {/* ── 0. Main Hero ─────────────────────────────────────────── */}
+      <MainHeroSection />
 
-      {/* 2. Who We Serve */}
-      <WhoWeServeSection
-        heading="Who We Serve"
-        ctaLabel="Get Started"
-        ctaHref="/contact"
-      />
+      {/* Press logo strip — hidden per request 2026-05-15 */}
+      {/* <TrustStripSection /> */}
 
-      {/* 3. Services */}
-      <ServicesSection heading="Our Solutions" />
+      {/* ── 0b. Online Reputation Experts ───────────────────────── */}
+      <OnlineReputationExpertsSection />
 
-      {/* 4. Key Benefits */}
-      <KeyBenefitsSection heading="Why Choose Us" />
+      {/* ── 0c. Industries ───────────────────────────────────────── */}
+      <IndustriesSection />
 
-      {/* 5. Testimonials */}
-      <TestimonialsSection
-        heading="Client Stories"
-        ctaLabel="Contact us"
-        ctaHref="/contact"
-      />
+      {/* ── 0d. Services ─────────────────────────────────────────── */}
+      <DentalServicesSection />
 
-      {/* Awards section hidden until PR articles are published
-              <AwardsStrip heading="As Featured In" /> */}
-      {/* 7. Our Process */}
-            <ProcessSection />
+      {/* ── 0e. Platforms + Get Recommended by AI ────────────────── */}
+      <PlatformsAndAISection />
 
-      {/* 8. Privacy */}
-      <PrivacySection heading="How We Safeguard Your Privacy" />
+      <WhoWeServeSection />
 
-      {/* 9. FAQ */}
-      <FAQSection heading="FAQ" />
+      {/* ── 8. Platforms & Media Outlets ──────────────────────────── */}
+      <PlatformsMediaSection />
 
-      {/* 10. CTA (Assessment Form) */}
-      <CTASection headline={"Free Reputation\nCase Assessment"} />
+      {/* ── Key Benefits ──────────────────────────────────────────── */}
+      <KeyBenefitsSection />
+
+      {/* ── Partners ─────────────────────────────────────────────── */}
+      <PartnersSection />
+
+      {/* ── Case Studies ─────────────────────────────────────────── */}
+      <DentalCaseStudiesSection />
+
+      {/* ── 10. FAQ ───────────────────────────────────────────────── */}
+      <DentalFAQSection />
+
+      {/* ── Insights ─────────────────────────────────────────────── */}
+      <InsightsSection />
+
+      {/* ── 11. CTA ───────────────────────────────────────────────── */}
+      <DentalCTASection />
+
+      {/* ── 12. Get in Touch ──────────────────────────────────────── */}
+      <DentalContactSection />
     </main>
   );
 }

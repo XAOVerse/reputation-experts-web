@@ -31,6 +31,7 @@ const SOLUTIONS: { label: string; href: string }[] = [
 
 const DEFAULT_NAV: import("../../types").NavItem[] = [
   { label: "About", href: "/about" },
+  { label: "AI Search", href: "/ai-search" },
   { label: "Careers", href: "/careers" },
   { label: "Contact", href: "/contact" },
 ];

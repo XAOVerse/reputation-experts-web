@@ -13,6 +13,21 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.cloudinary.com" },
     ],
   },
+  async redirects() {
+    return [
+      // Short URLs land on the canonical /ai-search.
+      {
+        source: "/search-ai",
+        destination: "/ai-search",
+        permanent: true,
+      },
+      {
+        source: "/ai-overview",
+        destination: "/ai-search",
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
