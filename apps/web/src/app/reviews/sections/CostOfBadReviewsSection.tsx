@@ -22,7 +22,7 @@ const COSTS = [
 export function CostOfBadReviewsSection() {
   return (
     <section
-      className="bg-white py-14 lg:py-20"
+      className="bg-white pt-11 pb-14 lg:pt-16 lg:pb-20"
       style={{ fontFamily: "'Roboto', sans-serif" }}
       aria-label="The cost of weak reviews"
     >
