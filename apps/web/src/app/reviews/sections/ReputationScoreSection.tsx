@@ -29,8 +29,8 @@ export function ReputationScoreSection() {
             <Image
               src="/images/reviews/reputation-score.png"
               alt="Reputation Score tracking dashboard showing star rating, review count, response rate and score over time across UK locations."
-              width={1800}
-              height={1090}
+              width={1804}
+              height={872}
               className="w-full h-auto rounded-3xl"
             />
           </div>
