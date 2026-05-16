@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function ListingOptimisationSection() {
   return (
@@ -9,24 +10,24 @@ export function ListingOptimisationSection() {
       aria-label="Listing optimisation"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
-        {/* Top row — heading left, image right */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start mb-10 lg:mb-14">
-          {/* Heading column */}
-          <div className="max-w-[520px]">
+        {/* Top row — narrow heading column (left) + wide image column (right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Heading column — narrow */}
+          <div className="lg:col-span-3">
             <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-5">
               Listings optimisation
             </p>
             <h2
               className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em]"
-              style={{ fontSize: "clamp(1.625rem, 3.4vw, 2.5rem)" }}
+              style={{ fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)" }}
             >
               Every listing accurate, optimised and read correctly by search
               and AI engines.
             </h2>
           </div>
 
-          {/* Image — raw, no card wrapper */}
-          <div>
+          {/* Image column — wide, raw image (no card) */}
+          <div className="lg:col-span-9">
             <Image
               src="/images/reviews/listing-score.png"
               alt="Listing Score dashboard showing per-platform accuracy and discoverability across Google, Apple, Bing and category-specific directories."
@@ -37,8 +38,18 @@ export function ListingOptimisationSection() {
           </div>
         </div>
 
+        {/* Free Assessment CTA */}
+        <div className="mt-8 lg:mt-10">
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
+          >
+            Free Assessment
+          </Link>
+        </div>
+
         {/* Two-column body text */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 mt-8 lg:mt-10">
           <p className="text-[#555] text-[15px] leading-[1.7]">
             We audit your Google Business Profile, Apple Business Connect, Bing
             Places and the long tail of category-specific listings, roughly 200
