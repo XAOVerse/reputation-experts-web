@@ -4,7 +4,7 @@ import Image from "next/image";
 const ACTIONS = [
   {
     title: "Dispute & remove policy-violating reviews",
-    body: "We file removal requests for reviews that breach Google, Trustpilot, Tripadvisor and Yelp policy — fake, off-topic, conflict-of-interest, harassment, hate speech. If the platform reinstates a removed review, we re-file on the new ground.",
+    body: "We file removal requests for reviews that breach Google, Trustpilot, Tripadvisor and Yelp policy, fake, off-topic, conflict-of-interest, harassment, hate speech. If the platform reinstates a removed review, we re-file on the new ground.",
   },
   {
     title: "Defamation & impersonation takedowns",
@@ -16,7 +16,7 @@ const ACTIONS = [
   },
   {
     title: "24/7 monitoring & re-disputes",
-    body: "Harmful content rarely stops at one post. Our monitors flag every new review and mention as it appears so the dispute is filed before it has time to influence prospective customers — and re-filed every time it reappears.",
+    body: "Harmful content rarely stops at one post. Our monitors flag every new review and mention as it appears so the dispute is filed before it has time to influence prospective customers, and re-filed every time it reappears.",
   },
 ];
 
@@ -28,48 +28,53 @@ export function OngoingProtectionSection() {
       aria-label="Ongoing protection"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start">
-          {/* Image (left on desktop) */}
-          <div className="bg-[#f4f6f9] rounded-3xl p-6 lg:p-8 lg:order-1 order-2">
+        {/* Top row — narrow heading (left) + wide raw image (right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Heading column — narrow */}
+          <div className="lg:col-span-3">
+            <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-5">
+              Always-on protection
+            </p>
+            <h2
+              className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em]"
+              style={{ fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)" }}
+            >
+              We dispute, remove and re-dispute harmful content the moment it
+              appears.
+            </h2>
+          </div>
+
+          {/* Image column — wide, raw image (no card) */}
+          <div className="lg:col-span-9">
             <Image
               src="/images/reviews/reporting-agent-2.png"
               alt="Always-on review monitoring dashboard showing flagged reviews, dispute status, and removal outcomes per location."
               width={1800}
               height={755}
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto"
             />
           </div>
+        </div>
 
-          {/* Copy */}
-          <div className="max-w-[520px] lg:order-2 order-1">
-            <p className="text-[#e8503a] text-[12px] tracking-[0.22em] uppercase font-semibold mb-5">
-              Always-on protection
-            </p>
-            <h2
-              className="text-[#0f0f0f] font-medium leading-[1.15] tracking-[-0.02em] mb-5"
-              style={{ fontSize: "clamp(1.625rem, 3.2vw, 2.5rem)" }}
-            >
-              We dispute, remove and re-dispute harmful content the moment it
-              appears.
-            </h2>
-            <p className="text-[#444] text-[16px] leading-[1.65] mb-6">
-              Most reputation damage is done in the days between when a harmful
-              review goes live and when anyone on your team notices. We close
-              that window.
-            </p>
+        {/* Intro paragraph + 4 actions in 2-col grid */}
+        <div className="mt-10 lg:mt-14">
+          <p className="text-[#555] text-[15px] leading-[1.7] max-w-[820px] mb-8 lg:mb-10">
+            Most reputation damage is done in the days between when a harmful
+            review goes live and when anyone on your team notices. We close
+            that window.
+          </p>
 
-            <ul className="space-y-5">
-              {ACTIONS.map((a) => (
-                <li key={a.title}>
-                  <p className="text-[#1a1a1a] text-[15.5px] font-semibold mb-1">
-                    {a.title}
-                  </p>
-                  <p className="text-[#555] text-[14.5px] leading-[1.6]">
-                    {a.body}
-                  </p>
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-8 lg:gap-x-14 lg:gap-y-10">
+            {ACTIONS.map((a) => (
+              <div key={a.title}>
+                <h3 className="text-[#1a1a1a] text-[16px] sm:text-[17px] font-semibold leading-[1.3] mb-3">
+                  {a.title}
+                </h3>
+                <p className="text-[#555] text-[14.5px] leading-[1.7]">
+                  {a.body}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

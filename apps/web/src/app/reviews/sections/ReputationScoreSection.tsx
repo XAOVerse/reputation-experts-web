@@ -9,42 +9,48 @@ export function ReputationScoreSection() {
       aria-label="Reputation Score"
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
-          {/* Image (left on desktop) */}
-          <div className="bg-[#f4f6f9] rounded-3xl p-6 lg:p-8 lg:order-1 order-2">
+        {/* Top row — narrow heading (left) + wide raw image (right) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+          {/* Heading column — narrow */}
+          <div className="lg:col-span-3">
+            <p className="text-[#e8503a] text-[11px] tracking-[0.22em] uppercase font-semibold mb-5">
+              Reputation Score
+            </p>
+            <h2
+              className="text-[#1a1a1a] font-normal leading-[1.2] tracking-[-0.02em]"
+              style={{ fontSize: "clamp(1.5rem, 2.4vw, 1.875rem)" }}
+            >
+              A single, honest read on how your brand is being judged online.
+            </h2>
+          </div>
+
+          {/* Image column — wide, raw image (no card) */}
+          <div className="lg:col-span-9">
             <Image
               src="/images/reviews/reputation-score.png"
               alt="Reputation Score view showing star rating, review velocity, sentiment and competitor comparison across locations."
               width={1800}
               height={1090}
-              className="w-full h-auto rounded-2xl"
+              className="w-full h-auto"
             />
           </div>
+        </div>
 
-          {/* Copy (right on desktop) */}
-          <div className="max-w-[520px] lg:order-2 order-1">
-            <p className="text-[#e8503a] text-[12px] tracking-[0.22em] uppercase font-semibold mb-5">
-              Reputation Score
-            </p>
-            <h2
-              className="text-[#0f0f0f] font-medium leading-[1.15] tracking-[-0.02em] mb-5"
-              style={{ fontSize: "clamp(1.625rem, 3.2vw, 2.5rem)" }}
-            >
-              A single, honest read on how your brand is being judged online.
-            </h2>
-            <p className="text-[#444] text-[16px] leading-[1.65] mb-5">
-              Star rating, review velocity, sentiment trend, response times and
-              competitor benchmarks rolled into one score per location, updated
-              weekly. You see what is improving, what is decaying and what is
-              dragging the average down — without spreadsheets and without
-              having to log into seven different platforms.
-            </p>
-            <p className="text-[#444] text-[16px] leading-[1.65]">
-              Your dedicated reputation manager walks you through it every
-              month, flags the highest-leverage fixes, and turns the report into
-              the next 30 days of work.
-            </p>
-          </div>
+        {/* Two-column body text */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-14 mt-10 lg:mt-14">
+          <p className="text-[#555] text-[15px] leading-[1.7]">
+            Star rating, review velocity, sentiment trend, response times and
+            competitor benchmarks rolled into one score per location, updated
+            weekly. You see what is improving, what is decaying and what is
+            dragging the average down, without spreadsheets and without having
+            to log into seven different platforms.
+          </p>
+          <p className="text-[#555] text-[15px] leading-[1.7]">
+            Your dedicated reputation manager walks you through it every month,
+            flags the highest-leverage fixes, and turns the report into the
+            next 30 days of work. No vanity metrics, no slides padding out the
+            report, just the moves that will lift the score.
+          </p>
         </div>
       </div>
     </section>
