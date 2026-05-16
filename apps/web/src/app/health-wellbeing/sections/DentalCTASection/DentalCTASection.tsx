@@ -67,7 +67,7 @@ export function DentalCTASection() {
               {/* Talk To Expert button — first */}
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
+                className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
               >
                 Talk To Expert
               </Link>

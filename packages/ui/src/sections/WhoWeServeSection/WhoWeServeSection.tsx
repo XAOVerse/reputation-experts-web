@@ -52,8 +52,7 @@ export function WhoWeServeSection({
           </h2>
           <Link
             href={ctaHref}
-            className="who-we-serve__cta inline-flex items-center rounded-full text-white text-[13px] sm:text-[14px] font-medium px-5 py-2.5 transition-colors whitespace-nowrap"
-            style={{ backgroundColor: '#e8502a' }}
+            className="who-we-serve__cta inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-[#FF461E] text-white text-[14px] font-medium hover:bg-[#e63b15] transition-colors whitespace-nowrap"
           >
             {ctaLabel}
           </Link>

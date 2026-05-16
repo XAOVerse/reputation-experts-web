@@ -72,7 +72,7 @@ export function DentalCaseStudiesSection() {
           </h2>
           <Link
             href="/contact"
-            className="inline-flex items-center rounded-full bg-[#0f0f0f] text-white text-[13px] px-5 py-2.5 hover:bg-[#333] transition-colors whitespace-nowrap"
+            className="inline-flex items-center rounded-full bg-[#0f0f0f] text-white text-[14px] font-medium px-5 py-2.5 hover:bg-[#333] transition-colors whitespace-nowrap"
             style={{ fontWeight: 500 }}
           >
             Talk To Expert
